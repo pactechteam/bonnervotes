@@ -1,4 +1,4 @@
-import img from "../public/pollingplaces.png";
+import img from "../public/pollinglocations.png";
 import Link from "next/link";
 
 function Locations() {
