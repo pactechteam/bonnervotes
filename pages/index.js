@@ -1,4 +1,4 @@
-import Library from "../components/library";
+import Library from "../components/Library";
 import Hospital from "../components/Hospital";
 import NorthernLights from "../components/NorthernLights";
 import Levies from "../components/Levies";
