@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 function Library() {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion>
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Card.Header} eventKey="0">

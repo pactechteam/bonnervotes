@@ -24,21 +24,24 @@ function demoPage() {
           style={{
             backgroundColor: "white",
             margin: "0",
-            padding: "0",
+            padding: "25px",
+            borderRadius: "25px",
           }}
         >
-          <h1>True Conservative Voter Guide</h1>
-          <h3>
+          <h1 style={{ textAlign: "center" }}>True Conservative Voter Guide</h1>
+          <h2 style={{ textAlign: "center" }}>
             Bonner County Election May 18th. Save Bonner County, your vote
             matters!
-          </h3>
+          </h2>
+          <br />
+          <br />
           <div>
-            <h3>Library board, you get to vote for two people</h3>
+            <h3>Library Board; you get to vote for two people</h3>
             <h4>Recommended</h4>
             <Library />
           </div>
           <div>
-            <h3>Hospital Board, you get to vote for two people</h3>
+            <h3>Hospital Board; you get to vote for two people</h3>
             <h4>Recommended</h4>
             <Hospital />
           </div>
