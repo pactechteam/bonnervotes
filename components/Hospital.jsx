@@ -18,14 +18,12 @@ function Library() {
               General Hospice and has great depth of knowledge regarding rural
               medical needs and the structures to provide same. She is a staunch
               conservative and is not an adherent of masking. She would bring a
-              wealth of experiential gravitas to the board. The Republican
-              central committee pick has zero experience in healthcare and has
-              really no track record that is applicable to this position and is
-              also in favor of a consitutional convention that would destroy our
-              country. Dodie is running for this position is her christian
-              beliefs have led her to be involved. Please support Dodie Glass
-              for this board position as she will look out for the best
-              interests of Bonner County residents.
+              wealth of experiential gravitas to the board. The only new board
+              candidates who have applicable and valuable experience are Dodie
+              Glass and Jessie Peters. Dodie is running for this position as her
+              Christian beliefs have convicted her to be involved. Please
+              support Dodie Glass for this board position as she will look out
+              for the best interests of Bonner County residents.
             </p>
           </Card.Body>
         </Accordion.Collapse>
