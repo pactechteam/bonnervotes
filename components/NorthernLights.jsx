@@ -1,6 +1,8 @@
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Link from "next/link";
+
 function Library() {
   return (
     <Accordion>
@@ -37,6 +39,9 @@ function Library() {
               receives for his service on the board to a local charity here in
               the area. --Thomas Leo Bonner B
             </p>
+            <Link href="/nli.pdf">
+              Click here for Northern Lights information
+            </Link>
           </Card.Body>
         </Accordion.Collapse>
       </Card>

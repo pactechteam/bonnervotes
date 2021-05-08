@@ -48,8 +48,9 @@ function demoPage() {
 
           <div>
             <h5>
-              Keep your eyes peeled for a separate ballot that may be mailed to
-              you for voting on the local power Company (Northern Lights) board
+              Don't forget to mail in your ballots for NLI District 4, which is
+              Sagle/Careywood area. These ballots need to be received by May
+              10th via mail, or drop them off at NLI in Sagle.
             </h5>
             <h6>Recommended</h6>
             <NorthernLights />
