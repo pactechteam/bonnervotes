@@ -5,10 +5,7 @@ function Locations() {
   return (
     <div>
       <h1>Voter location information</h1>
-      <p>
-        The county does not make it super easy to find your polling place if you
-        are new. But they do provide us with this PDF of locations and a note
-      </p>
+      <p>Please see the below list of Bonner County polling locations.</p>
       <img src={img} />
       <div>
         <ul>

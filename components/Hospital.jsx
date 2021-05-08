@@ -13,17 +13,18 @@ function Library() {
         <Accordion.Collapse eventKey="0">
           <Card.Body>
             <p>
-              Dodie Glass has she has a masters in nursing for approx 25 years.
-              She has worked at rural hospitals before and worked @ Bonner
-              General Hospice and has great depth of knowledge regarding rural
-              medical needs and the structures to provide same. She is a staunch
-              conservative and is not an adherent of masking. She would bring a
-              wealth of experiential gravitas to the board. The only new board
-              candidates who have applicable and valuable experience are Dodie
-              Glass and Jessie Peters. Dodie is running for this position as her
-              Christian beliefs have convicted her to be involved. Please
-              support Dodie Glass for this board position as she will look out
-              for the best interests of Bonner County residents.
+              Dodie Glass has a masters in nursing and has been in the field for
+              approx 25 years. She has worked at rural hospitals before and
+              worked at Bonner General Hospice. She has a great depth of
+              knowledge regarding rural medical needs and the structures to
+              provide same. She is a staunch conservative and is not an adherent
+              of masking. She would bring a wealth of experiential gravitas to
+              the board. The only new board candidates who have applicable and
+              valuable experience are Dodie Glass and Jessie Peters. Dodie is
+              running for this position as her Christian beliefs have convicted
+              her to be involved. Please support Dodie Glass for this board
+              position as she will look out for the best interests of Bonner
+              County residents.
             </p>
           </Card.Body>
         </Accordion.Collapse>
