@@ -64,12 +64,18 @@ function demoPage() {
           </div>
           <div>
             <h3>WHERE TO VOTE INFORMATION</h3>
-            <div>
+            <div style={{ color: "blue", textDecoration: "underline" }}>
               <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
                 <a target="blank">Look up your voting location here</a>
               </Link>
             </div>
-            <div style={{ marginTop: "10vh" }}>
+            <div
+              style={{
+                marginTop: "10vh",
+                color: "blue",
+                textDecoration: "underline",
+              }}
+            >
               <Link href="/locations" passHref>
                 <a>Here is a backup if the above does not work</a>
               </Link>
