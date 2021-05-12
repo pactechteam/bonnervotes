@@ -28,7 +28,9 @@ function demoPage() {
             borderRadius: "25px",
           }}
         >
-          <h1 style={{ textAlign: "center" }}>True Conservative Voter Guide</h1>
+          <h1 style={{ textAlign: "center" }}>
+            Idaho True Conservatives Voter Guide
+          </h1>
           <h2 style={{ textAlign: "center" }}>
             Bonner County Election May 18th. Save Bonner County, your vote
             matters!
@@ -62,9 +64,16 @@ function demoPage() {
           </div>
           <div>
             <h3>WHERE TO VOTE INFORMATION</h3>
-            <Link href="/locations">
-              <a>Click here to get information on where to vote</a>
-            </Link>
+            <div>
+              <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
+                <a target="blank">Look up your voting location here</a>
+              </Link>
+            </div>
+            <div style={{ marginTop: "10vh" }}>
+              <Link href="/locations" passHref>
+                <a>Here is a backup if the above does not work</a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

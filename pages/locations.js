@@ -5,6 +5,11 @@ function Locations() {
   return (
     <div>
       <h1>Voter location information</h1>
+      <div>
+        <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
+          <a target="blank">Look up your voting location here</a>
+        </Link>
+      </div>
       <p>Please see the below list of Bonner County polling locations.</p>
       <img src={img} />
       <div>
