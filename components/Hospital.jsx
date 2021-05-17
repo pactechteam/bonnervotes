@@ -13,18 +13,19 @@ function Library() {
         <Accordion.Collapse eventKey="0">
           <Card.Body>
             <p>
-              Dodie Glass has a masters in nursing and has been in the field for
-              approx 25 years. She has worked at rural hospitals before and
-              worked at Bonner General Hospice. She has a great depth of
-              knowledge regarding rural medical needs and the structures to
-              provide same. She is a staunch conservative and is not an adherent
-              of masking. She would bring a wealth of experiential gravitas to
-              the board. The only new board candidates who have applicable and
-              valuable experience are Dodie Glass and Jessie Peters. Dodie is
-              running for this position as her Christian beliefs have convicted
-              her to be involved. Please support Dodie Glass for this board
-              position as she will look out for the best interests of Bonner
-              County residents.
+              Dodie Glass has a Master's degree in Nursing, a Bachelor's of
+              Science in Nursing, and has been in the medical field for
+              approximately 25 years. She has worked at rural hospitals before
+              and worked at Bonner General Hospice. Glass has great depth of
+              knowledge regarding rural medical needs and the structures needed
+              to provide the same. She is a staunch conservative and is not an
+              adherent of mandating mask wearing. She brings a wealth of
+              experiential gravitas to the board. The only new board candidates
+              who have applicable and valuable experience are Dodie Glass and
+              Jessie Peters. Dodie is running for this position as her Christian
+              beliefs have convicted her to be involved. Please support Dodie
+              Glass for this board position as she will look out for the best
+              interests of Bonner County residents.
             </p>
           </Card.Body>
         </Accordion.Collapse>
