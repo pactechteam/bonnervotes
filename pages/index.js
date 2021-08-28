@@ -32,8 +32,7 @@ function demoPage() {
             Idaho True Conservatives Voter Guide
           </h1>
           <h2 style={{ textAlign: "center" }}>
-            Bonner County Election May 18th. Save Bonner County, your vote
-            matters!
+            The Voting Guide for Bonner County
           </h2>
           <br />
           <br />
