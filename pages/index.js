@@ -3,66 +3,91 @@ import Hospital from "../components/Hospital";
 import NorthernLights from "../components/NorthernLights";
 import Levies from "../components/Levies";
 import Link from "next/link";
+import Image from 'next/image'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
+import { fontSize } from "@material-ui/system";
+
 
 function Home() {
   return (
     <div
       style={{
-        backgroundImage: `url(${require("../public/american-flag-in-wind.jpg")})`,
-        width: "100%",
-        height: "100$",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundColor: '#162E74',
+        //width: "100%",
+        //height: "100$",
+        //backgroundRepeat: "no-repeat",
+        //backgroundSize: "cover",
       }}
     >
+      <Header />
       <div
+        id="main-content"
         style={{
-          padding: "10%",
+          padding: '10%',
         }}
       >
         <div
+          className={styles.stripes}
           style={{
-            backgroundColor: "white",
-            margin: "0",
-            padding: "25px",
-            borderRadius: "25px",
+            position: 'relative',
+            backgroundColor: 'white',
+            margin: '0 auto',
+            padding: '60px',
+            marginBottom: -350,
+            maxWidth: 1080,
+            //borderRadius: '25px',
           }}
         >
-          <h1 style={{ textAlign: "center" }}>
-            Idaho True Conservatives Voter Guide
-          </h1>
-          <h2 style={{ textAlign: "center" }}>
-            The Voting Guide for Bonner County
-          </h2>
-          <br />
+          <div // ------ Stars
+            style={{
+              position: 'absolute',
+              backgroundColor: '#162E74',
+              padding: '0 10px 0 10px',
+              top: -57,
+              left: '50%',
+              transform: 'translate(-50%, 0%)',
+              textAlign: 'center',
+            }}
+          >
+             <Image src="/gfx/white-stars.svg" width={125} height={40} />
+          </div>
           <br />
           <div>
-            <h3>Library Board; you get to vote for two people</h3>
-            <h4>Recommended</h4>
+            <h3>Library Board <em>(two votes)</em></h3>
+            <br />
             <Library />
           </div>
           <div>
-            <h3>Hospital Board; you get to vote for two people</h3>
-            <h4>Recommended</h4>
+            <br />
+            <br />
+            <h3>Hospital Board <em>(two votes)</em></h3>
+            <br />
             <Hospital />
           </div>
 
           <div>
-            <h5>
+            <br />
+            <h6>
               Don't forget to mail in your ballots for NLI District 4, which is
               Sagle/Careywood area. These ballots need to be received by May
               10th via mail, or drop them off at NLI in Sagle.
-            </h5>
-            <h6>Recommended</h6>
+            </h6>
+            <br />
             <NorthernLights />
           </div>
           <div>
+            <br />
+            <br />
             <h3>Bonds and Levies</h3>
-            <h4>Recommended</h4>
+            <br />
             <Levies />
           </div>
           <div>
-            <h3>WHERE TO VOTE INFORMATION</h3>
+            <br />
+            <br />
+            <h3>Voting Locations</h3>
             <div style={{ color: "blue", textDecoration: "underline" }}>
               <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
                 <a target="blank">Look up your voting location here</a>
@@ -80,8 +105,24 @@ function Home() {
               </Link>
             </div>
           </div>
+
+          <div // ------ 2020
+            style={{
+              position: 'absolute',
+              backgroundColor: '#0C1A3D',
+              padding: '0 15px 0 15px',
+              bottom: -52,
+              left: '50%',
+              transform: 'translate(-50%, 0%)',
+              textAlign: 'center',
+            }}
+          >
+            <span style={{color: '#C2C3C4',/*color: '#162E74', mixBlendMode: 'screen',*/ fontSize: '18pt'}}>2020</span>
+          </div>
+
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
