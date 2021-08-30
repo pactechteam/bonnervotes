@@ -87,15 +87,15 @@ function Home() {
           <div>
             <br />
             <br />
-            <h3>Voting Locations</h3>
-            <div style={{ color: "blue", textDecoration: "underline" }}>
+            <h3 style={{ color: "#F43737" }}>Voting Locations</h3>
+            <div style={{ color: "#0C1A3D", textDecoration: "underline" }}>
               <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
                 <a target="blank">Look up your voting location here</a>
               </Link>
             </div>
             <div
               style={{
-                marginTop: "10vh",
+                marginTop: "5vh",
                 color: "blue",
                 textDecoration: "underline",
               }}
