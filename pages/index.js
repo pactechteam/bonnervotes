@@ -4,7 +4,7 @@ import NorthernLights from "../components/NorthernLights";
 import Levies from "../components/Levies";
 import Link from "next/link";
 
-function demoPage() {
+function Home() {
   return (
     <div
       style={{
@@ -86,4 +86,4 @@ function demoPage() {
   );
 }
 
-export default demoPage;
+export default Home;
