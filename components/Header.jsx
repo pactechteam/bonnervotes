@@ -15,7 +15,9 @@ function Header() {
     >
       <div
         style={{
-          marginTop: 80,
+          margin: 65,
+          //marginTop: 80,
+          //marginBottom: 80,
           textAlign: "center",
         }}
       >

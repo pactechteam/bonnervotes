@@ -5,8 +5,8 @@ function Library() {
   return (
     <Accordion>
       <Card>
-        <Card.Header>
-          <Accordion.Toggle as={Card.Header} eventKey="0">
+       <Card.Header>
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
             Dolores Glass
           </Accordion.Toggle>
         </Card.Header>

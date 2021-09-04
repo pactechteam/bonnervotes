@@ -37,7 +37,7 @@ function Home() {
             padding: '60px',
             marginBottom: -350,
             maxWidth: 1080,
-            //borderRadius: '25px',
+            borderRadius: '2px',
           }}
         >
           <div // ------ Stars
@@ -96,7 +96,7 @@ function Home() {
             <div
               style={{
                 marginTop: "5vh",
-                color: "blue",
+                color: "0C1A3D",
                 textDecoration: "underline",
               }}
             >
@@ -117,7 +117,7 @@ function Home() {
               textAlign: 'center',
             }}
           >
-            <span style={{color: '#C2C3C4',/*color: '#162E74', mixBlendMode: 'screen',*/ fontSize: '18pt'}}>2020</span>
+            <span style={{ color: '#FFFFFF', fontSize: '18pt' }}>2020</span>
           </div>
 
         </div>

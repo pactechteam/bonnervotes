@@ -9,7 +9,7 @@ function Footer() {
     <footer
       style={{
         backgroundColor: '#0C1A3D',
-        padding: '600px 0 60px 0',
+        padding: '600px 125px 35px 125px',
         // display: 'flex',
         // //alignItems: 'center',
         // justifyContent: 'center',
@@ -17,7 +17,6 @@ function Footer() {
     >
       <div
         style={{
-          //marginBottom: 60,
           textAlign: 'center',
         }}
       >
