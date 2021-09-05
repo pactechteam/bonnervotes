@@ -1,0 +1,17 @@
+
+/* .candidate {
+  padding-top: 3em;
+} */
+
+.candidate h3 {
+  font-size: 24pt;
+  font-weight: 400;
+}
+
+.candidate p {
+  color: #777;
+}
+
+.title {
+  font-size: 42pt;
+}
