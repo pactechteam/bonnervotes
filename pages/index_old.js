@@ -1,4 +1,3 @@
-import Candidate from "../components/Candidate";
 import Library from "../components/Library";
 import Hospital from "../components/Hospital";
 import NorthernLights from "../components/NorthernLights";
@@ -54,15 +53,58 @@ function Home() {
           >
              <Image src="/gfx/white-stars.svg" width={125} height={40} />
           </div>
+          <br />
+          <div>
+            <h3>Library Board <em>(two votes)</em></h3>
+            <br />
+            <Library />
+          </div>
+          <div>
+            <br />
+            <br />
+            <h3>Hospital Board <em>(two votes)</em></h3>
+            <br />
+            <Hospital />
+          </div>
 
-          <h1>Elections</h1>
-          <h2>Race</h2>
-          <ul>
-            <Candidate data={{
-              imgUrl: 'https://picsum.photos/400/300?grayscale',
-              name: 'First Last',
-            }}/>
-          </ul>
+          <div>
+            <br />
+            <h6>
+              Don't forget to mail in your ballots for NLI District 4, which is
+              Sagle/Careywood area. These ballots need to be received by May
+              10th via mail, or drop them off at NLI in Sagle.
+            </h6>
+            <br />
+            <NorthernLights />
+          </div>
+          <div>
+            <br />
+            <br />
+            <h3>Bonds and Levies</h3>
+            <br />
+            <Levies />
+          </div>
+          <div>
+            <br />
+            <br />
+            <h3 style={{ color: "#F43737" }}>Voting Locations</h3>
+            <div style={{ color: "#0C1A3D", textDecoration: "underline" }}>
+              <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
+                <a target="blank">Look up your voting location here</a>
+              </Link>
+            </div>
+            <div
+              style={{
+                marginTop: "5vh",
+                color: "0C1A3D",
+                textDecoration: "underline",
+              }}
+            >
+              <Link href="/locations" passHref>
+                <a>Here is a backup if the above does not work</a>
+              </Link>
+            </div>
+          </div>
 
           <div // ------ 2020
             style={{

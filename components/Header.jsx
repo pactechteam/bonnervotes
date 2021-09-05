@@ -22,9 +22,9 @@ function Header() {
         }}
       >
         <Image src="/logo/logo_on-dark.svg" width={480} height={120} />
-        <h2 style={{ fontWeight: "lighter", color: "white", mixBlendMode: "soft-light" }}>
+        <h1 style={{ fontSize: "22pt", fontWeight: "lighter", color: "white", mixBlendMode: "soft-light" }}>
           The Voter Guide <em>for</em> Bonner County
-        </h2>
+        </h1>
       </div>
     </header>
   );

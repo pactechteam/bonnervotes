@@ -20,7 +20,7 @@ function Footer() {
           textAlign: 'center',
         }}
       >
-        <Image src="/logo/logo_on-dark.svg" width={200} height={50} />
+        <Image src="/logo/logo_on-dark.svg" width={160} height={50} />
       </div>
     </footer>
   );

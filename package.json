@@ -14,7 +14,6 @@
     "next": "10.x",
     "next-images": "^1.7.0",
     "react": "17.x",
-    "react-bootstrap": "^1.5.2",
     "react-dom": "17.x",
     "typescript": "^4.2.4"
   }
