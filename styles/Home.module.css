@@ -39,7 +39,7 @@
   position: absolute;
   background-color: #0C1A3D;
   padding: 0 15px 0 15px;
-  bottom: -52px;
+  bottom: -2.55em;
   left: 50%;
   transform: translate(-50%, 0%);
   text-align: center;
@@ -75,5 +75,9 @@
   .stars {
     padding: 0 10px 0 10px;
     top: -57px;
+  }
+
+  .year {
+    bottom: -3.55em;
   }
 }
