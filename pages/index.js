@@ -19,7 +19,7 @@ function Home() {
         <div
           className={styles.stripes}>
           <div className={styles.stars}>
-             <Image src="/gfx/white-stars.svg" width={125} height={40} />
+             <Image src="/svg/stars_on-dark.svg" width={125} height={40} />
           </div>
 
           <h1>Elections</h1>
