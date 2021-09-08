@@ -15,7 +15,7 @@
 
 .stripes::before {
   content: "";
-  pointer-events: none;
+  pointer-events: none; /* this fixes the unclickable links at the bottom */
   display: block;
   position: absolute;
   top: -1.5em;
