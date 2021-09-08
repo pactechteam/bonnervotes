@@ -11,10 +11,12 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "bootstrap": "^5.0.0",
+    "classnames": "^2.3.1",
     "next": "10.x",
     "next-images": "^1.7.0",
     "react": "17.x",
     "react-dom": "17.x",
+    "sass": "^1.39.0",
     "typescript": "^4.2.4"
   }
 }

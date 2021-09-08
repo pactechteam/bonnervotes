@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import TextBlock from "./TextBlock";
-import styles from "../styles/Candidate.module.css";
+import styles from "../styles/Candidate.module.scss";
 import Image from 'next/image'
 
-function Candidate({ data }) {
+function Candidate({ data, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleTextBlock(e) {
@@ -16,12 +16,22 @@ function Candidate({ data }) {
   const toggleClass = isOpen ? 'toggle-open' : '';
 
   return (
-    <li className={`${styles.candidate} grid-item ${toggleClass}`}>
+    <li className={`${styles.candidate} grid-item accordian ${toggleClass}`}>
       <img src={data.imgUrl}></img>
-      <div onClick={toggleTextBlock}>
+      <a className={'accordian-header'} onClick={toggleTextBlock}>
         <h3>{data.name}</h3>
-      </div>
-      <TextBlock />
+      </a>
+      <TextBlock content={ children }/>
+
+      <style jsx>{`
+        .accordian-header {
+          display: block;
+          cursor: pointer;
+         }
+        .accordian-header:hover h3 {
+          text-decoration: underline;
+        }
+      `}</style>
     </li>
   );
 }
