@@ -1,27 +1,9 @@
 
-/* .candidate {
-  padding-top: 3em;
-} */
-
-.candidate h3 {
-  font-size: 24pt;
-  font-weight: 400;
-}
-
-.candidate p {
-  font-weight: 400;
-  /* color: #777; */
-}
-
-.title {
-  font-size: 42pt;
-}
-
 .textBlock {
   width: 100%;
 }
 
-.inner {
+/* .inner {
   --line-height: 1.4em;
 
   display: block;
@@ -31,7 +13,7 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: var(--line-height);
-  -webkit-line-clamp: 2; /* replace with a variable? */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -40,8 +22,8 @@
 .inner p {
   margin-top: 0;
   margin-bottom: 1em;
-}
+} */
 
-.toggle-open .inner {
-  background-color: gray;
+.inner {
+
 }

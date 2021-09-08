@@ -1,35 +1,27 @@
+
+import React, { useState } from 'react';
+import TextBlock from "./TextBlock";
 import styles from "../styles/Candidate.module.css";
 import Image from 'next/image'
 
 function Candidate({ data }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleTextBlock(e) {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+    console.log('toggling');
+  }
+
+  const toggleClass = isOpen ? 'toggle-open' : '';
+
   return (
-    <li className={styles.candidate}>
+    <li className={`${styles.candidate} grid-item ${toggleClass}`}>
       <img src={data.imgUrl}></img>
-      <h3>{data.name}</h3>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
-        {data.small == 1 && (
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-          </p>
-        )}
+      <div onClick={toggleTextBlock}>
+        <h3>{data.name}</h3>
       </div>
+      <TextBlock />
     </li>
   );
 }

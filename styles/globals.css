@@ -1,3 +1,4 @@
+
 html,
 body {
   background-color: #162E74;
@@ -36,4 +37,9 @@ p {
 img {
   width: 100%;
   height: auto;
+}
+
+.grid-item {
+  overflow: hidden;  /* NEW */
+  min-width: 0;      /* NEW; needed for Firefox */
 }
