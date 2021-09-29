@@ -3,18 +3,17 @@ import Hospital from "../components/Hospital";
 import NorthernLights from "../components/NorthernLights";
 import Levies from "../components/Levies";
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import { fontSize } from "@material-ui/system";
-
-
+import SusanBrown from "../components/SusanBrown";
 function Home() {
   return (
     <div
       style={{
-        backgroundColor: '#162E74',
+        backgroundColor: "#162E74",
         //width: "100%",
         //height: "100$",
         //backgroundRepeat: "no-repeat",
@@ -25,16 +24,15 @@ function Home() {
       <div
         id="main-content"
         style={{
-          padding: '10%',
+          padding: "10%",
         }}
       >
         <div
-          className={styles.stripes}
           style={{
-            position: 'relative',
-            backgroundColor: 'white',
-            margin: '0 auto',
-            padding: '60px',
+            position: "relative",
+            backgroundColor: "white",
+            margin: "0 auto",
+            padding: "60px",
             marginBottom: -350,
             maxWidth: 1080,
             //borderRadius: '25px',
@@ -42,48 +40,19 @@ function Home() {
         >
           <div // ------ Stars
             style={{
-              position: 'absolute',
-              backgroundColor: '#162E74',
-              padding: '0 10px 0 10px',
+              position: "absolute",
+              backgroundColor: "#162E74",
+              padding: "0 10px 0 10px",
               top: -57,
-              left: '50%',
-              transform: 'translate(-50%, 0%)',
-              textAlign: 'center',
+              left: "50%",
+              transform: "translate(-50%, 0%)",
+              textAlign: "center",
             }}
           >
-             <Image src="/gfx/white-stars.svg" width={125} height={40} />
+            <Image src="/gfx/white-stars.svg" width={125} height={40} />
           </div>
           <br />
-          <div>
-            <h3>Library Board <em>(two votes)</em></h3>
-            <br />
-            <Library />
-          </div>
-          <div>
-            <br />
-            <br />
-            <h3>Hospital Board <em>(two votes)</em></h3>
-            <br />
-            <Hospital />
-          </div>
-
-          <div>
-            <br />
-            <h6>
-              Don't forget to mail in your ballots for NLI District 4, which is
-              Sagle/Careywood area. These ballots need to be received by May
-              10th via mail, or drop them off at NLI in Sagle.
-            </h6>
-            <br />
-            <NorthernLights />
-          </div>
-          <div>
-            <br />
-            <br />
-            <h3>Bonds and Levies</h3>
-            <br />
-            <Levies />
-          </div>
+          <SusanBrown />
           <div>
             <br />
             <br />
@@ -108,18 +77,24 @@ function Home() {
 
           <div // ------ 2020
             style={{
-              position: 'absolute',
-              backgroundColor: '#0C1A3D',
-              padding: '0 15px 0 15px',
+              position: "absolute",
+              backgroundColor: "#0C1A3D",
+              padding: "0 15px 0 15px",
               bottom: -52,
-              left: '50%',
-              transform: 'translate(-50%, 0%)',
-              textAlign: 'center',
+              left: "50%",
+              transform: "translate(-50%, 0%)",
+              textAlign: "center",
             }}
           >
-            <span style={{color: '#C2C3C4',/*color: '#162E74', mixBlendMode: 'screen',*/ fontSize: '18pt'}}>2020</span>
+            <span
+              style={{
+                color: "#C2C3C4",
+                /*color: '#162E74', mixBlendMode: 'screen',*/ fontSize: "18pt",
+              }}
+            >
+              2020
+            </span>
           </div>
-
         </div>
       </div>
       <Footer />
