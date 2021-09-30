@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import { fontSize } from "@material-ui/system";
 import SusanBrown from "../components/SusanBrown";
+import Randomizer from "../components/Randomizer";
+import KeithRutledge from "../components/KeithRutledge";
 function Home() {
   return (
     <div
@@ -52,7 +54,7 @@ function Home() {
             <Image src="/gfx/white-stars.svg" width={125} height={40} />
           </div>
           <br />
-          <SusanBrown />
+          <Randomizer array={[<SusanBrown />, <KeithRutledge />]} />
           <div>
             <br />
             <br />
