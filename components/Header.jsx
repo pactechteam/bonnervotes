@@ -1,28 +1,24 @@
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import Image from 'next/image'
+import styles from "../styles/Header.module.scss";
 
 
 function Header() {
   return (
-    <header
-      // style={{
-      //   display: "flex",
-      //   //alignItems: "center",
-      //   justifyContent: "center",
-      // }}
-    >
-      <div
-        style={{
-          marginTop: 80,
-          textAlign: "center",
-        }}
-      >
-        <Image src="/logo/logo_on-dark.svg" width={480} height={120} />
-        <h2 style={{ fontWeight: "lighter", color: "white", mixBlendMode: "soft-light" }}>
-          The Voter Guide <em>for</em> Bonner County
+    <header className={styles.header}>
+      <div className={styles.taglineBox}>
+        <h2 className={styles.tagline}>
+          The Voting Guide
+          <br/>
+          <em>for</em> Bonner County
         </h2>
+        <nav>
+          <a>2021 Elections</a>
+          <a>Where To Vote</a>
+          <a>Our Values</a>
+        </nav>
+      </div>
+      <div className={styles.logoBox}>
+        <Image src="/svg/logo_main.svg" width={400 * 1.2} height={100 * 1.2} />
       </div>
     </header>
   );

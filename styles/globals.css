@@ -1,6 +1,6 @@
+
 html,
 body {
-  background-color: #162E74;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -10,4 +10,37 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+header, footer, section {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #0C1A3D;
+  margin-top: .8em;
+  margin-bottom: .1em;
+}
+
+p {
+  margin-top: .75em;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  overflow: hidden;  /* NEW */
+  min-width: 0;      /* NEW; needed for Firefox */
 }
