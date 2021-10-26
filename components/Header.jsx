@@ -1,27 +1,24 @@
 import Image from 'next/image'
+import styles from "../styles/Header.module.scss";
 
 
 function Header() {
   return (
-    <header
-      // style={{
-      //   display: "flex",
-      //   //alignItems: "center",
-      //   justifyContent: "center",
-      // }}
-    >
-      <div
-        style={{
-          margin: 65,
-          //marginTop: 80,
-          //marginBottom: 80,
-          textAlign: "center",
-        }}
-      >
-        <Image src="/svg/logo_on-dark.svg" width={400} height={100} />
-        <h1 style={{ fontSize: "20pt", fontWeight: "lighter", color: "white", mixBlendMode: "soft-light" }}>
-          The Voter Guide <em>for</em> Bonner County
-        </h1>
+    <header className={styles.header}>
+      <div className={styles.taglineBox}>
+        <h2 className={styles.tagline}>
+          The Voting Guide
+          <br/>
+          <em>for</em> Bonner County
+        </h2>
+        <nav>
+          <a>2021 Elections</a>
+          <a>Where To Vote</a>
+          <a>Our Values</a>
+        </nav>
+      </div>
+      <div className={styles.logoBox}>
+        <Image src="/svg/logo_main.svg" width={400 * 1.2} height={100 * 1.2} />
       </div>
     </header>
   );

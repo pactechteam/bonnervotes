@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Robert Rutan",
+        "position": "Kootenai City Council",
+        "verified": true
+    },
+    {
+        "name": "Merlin Glass",
+        "position": "Dover City Council",
+        "verified": true
+    },
+    {
+        "name": "Keith Rutledge",
+        "position": "West Bonner County School Board",
+        "verified": true
+    },
+    {
+        "name": "Susan Brown",
+        "position": "West Bonner County School Board",
+        "verified": true
+    },
+    {
+        "name": "Jalon Peters",
+        "position": "Lake Pend Orielle School Board",
+        "verified": true
+    },
+    {
+        "name": "Jason Welker",
+        "position": "Sandpoint City Council",
+        "verified": false
+    },
+    {
+        "name": "John Darling",
+        "position": "Sandpoint City Council",
+        "verified": false
+    },
+    {
+        "name": "Joel Aispiro",
+        "position": "Sandpoint City Council",
+        "verified": false
+    },
+    {
+        "name": "Luke Omodt",
+        "position": "Sandpoint City Council",
+        "verified": false
+    }
+]

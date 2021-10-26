@@ -1,7 +1,6 @@
 
 html,
 body {
-  background-color: #162E74;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -15,6 +14,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+header, footer, section {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 ul {

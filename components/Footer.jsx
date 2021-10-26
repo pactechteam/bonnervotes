@@ -1,23 +1,12 @@
 import Image from 'next/image'
+import styles from "../styles/Footer.module.scss"
 
 
 function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: '#0C1A3D',
-        padding: '600px 125px 35px 125px',
-        // display: 'flex',
-        // //alignItems: 'center',
-        // justifyContent: 'center',
-      }}
-    >
-      <div
-        style={{
-          textAlign: 'center',
-        }}
-      >
-        <Image src="/svg/logo_on-dark.svg" width={160} height={50} />
+    <footer className={styles.footer}>
+      <div className={styles.footerLogo}>
+        <Image src="/svg/logo_footer.svg" width={240 * 0.9} height={75 * 0.9} />
       </div>
     </footer>
   );
