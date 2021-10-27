@@ -23,7 +23,7 @@ function Home() {
             <div className={styles.gridTitleRow}><h3>True Conservatives</h3></div>
             <div className={classNames(styles.trueConserv, styles.col, styles.col1)}>
               <img className={styles.star} src="/svg/star-badge.svg" />
-              <img src="https://unsplash.it/799/804" />
+              <img src="/img/blank-img.png" alt="No photo" />
               <h4>Robert Rutan</h4>
               <span>Kootenai City Council</span>
               <br/>
@@ -31,7 +31,7 @@ function Home() {
             </div>
             <div className={classNames(styles.trueConserv, styles.col, styles.col2)}>
               <img className={styles.star} src="/svg/star-badge.svg" />
-              <img src="https://unsplash.it/799/804" />
+              <img src="/img/blank-img.png" alt="No photo" />
               <h4>Merlin Glass</h4>
               <span>Dover City Council</span>
               <br />
@@ -39,7 +39,7 @@ function Home() {
             </div>
             <div className={classNames(styles.trueConserv, styles.col, styles.col3)}>
               <img className={styles.star} src="/svg/star-badge.svg" />
-              <img src="https://unsplash.it/799/804" />
+              <img src="/img/blank-img.png" alt="No photo" />
               <h4>Jalon Peters</h4>
               <span>Lake Pend Orielle School Board</span>
               <br />
@@ -47,7 +47,7 @@ function Home() {
             </div>
             <div className={classNames(styles.trueConserv, styles.col, styles.col4)}>
               <img className={styles.star} src="/svg/star-badge.svg" />
-              <img src="https://unsplash.it/799/804" />
+              <img src="/img/blank-img.png" alt="No photo" />
               <h4>Susan Brown</h4>
               <span>West Bonner County School Board</span>
               <br />
@@ -55,7 +55,7 @@ function Home() {
             </div>
             <div className={classNames(styles.trueConserv, styles.col, styles.col5)}>
               <img className={styles.star} src="/svg/star-badge.svg" />
-              <img src="https://unsplash.it/799/804" />
+              <img src="/img/blank-img.png" alt="No photo" />
               <h4>Keith Rutledge</h4>
               <span>West Bonner County School Board</span>
               <br />
