@@ -1,5 +1,6 @@
 import img from "../public/pollinglocations.png";
 import Link from "next/link";
+import Image from "next/image";
 
 function Locations() {
   return (
@@ -11,7 +12,7 @@ function Locations() {
         </Link>
       </div>
       <p>Please see the below list of Bonner County polling locations.</p>
-      <img src={img} />
+      <Image src={img} layout='fill' />
       <div>
         <ul>
           <li>
