@@ -2,15 +2,15 @@
 .header {
   padding-left: 0;
 
-  nav {
-    padding-top: 1.2em;
+  .headerNav {
+    background-color: #103389;
+    padding: 40px;
 
     a {
       display: inline-block;
       font-style: normal;
       font-weight: 400;
-      font-size: 18
-      px;
+      font-size: 28px;
       color: #0C1A3D;
       margin-right: 40px;
     }
@@ -24,17 +24,32 @@
   padding: 100px 60px 100px 40px;
 }
 
-.taglineBox {
-  width: 55%;
-  background-color: white;
-  float: right;
-  padding-top: 100px;
+.navContainer {
+  background-color: #103389;
 }
 
 .tagline {
+  display: none;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
   line-height:1.1em;
   color: #0C1A3D;
+}
+
+
+// ... Tablet .... //
+
+@media screen and (min-width: 851px) {
+
+
+
+}
+
+// ... Desktop .... //
+
+@media screen and (min-width: 1200px) {
+
+
+
 }

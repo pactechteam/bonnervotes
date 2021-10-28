@@ -1,7 +1,5 @@
 
-// .main {
-//   margin: 0 auto;
-// }
+// Verified Candidates Section //
 
 .verified {
   padding-top: 20px;
@@ -23,9 +21,9 @@
 
 .verifiedGrid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30px auto;
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3em auto;
+  gap: 2.2em;
   margin-top: 50px;
 }
 
@@ -80,14 +78,37 @@
   grid-column: 2 / -1;
 
     h3 {
-      font-weight: normal;
+      font-size: 22px;
+      font-weight: bold;
       color: #F43737;
       margin: 0;
     }
 }
 
+
 .vertLine {
-  border-right: 5px solid #F43737;
+  display: none;
+}
+
+.col img {
+  display:block;
+  object-fit: cover;
+  width:100%;
+}
+
+// ... Tablet .... //
+
+@media screen and (min-width: 851px) {
+
+.verifiedGrid {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 3em auto;
+  gap: 2.2em;
+  margin-top: 50px;
+}
+
+.vertLine {
+  border-right: 7px solid #F43737;
   grid-row: 1 / -1;
 }
 
@@ -111,13 +132,14 @@
   grid-column: 10 / span 2;
 }
 
-.col img {
-  display:block;
-  object-fit: cover;
-  width:100%;
+}
+
+// ... Desktop .... //
+
+@media screen and (min-width: 1200px) {
+
+
+
 }
 
 
-@media screen and (min-width: 769px) {
-
-}

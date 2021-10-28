@@ -17,11 +17,13 @@ function Candidate({ data }) {
         )}
       </div>
       <h4>{data.name}
-        {data.verified && (
+
+      {/* This adds the Star Badge */}
+        {/* {data.verified && (
           <img className={styles.star} src="/svg/star-badge.svg" />
-        )}
+        )} */}
+
       </h4>
-      <br/>
       <span>{data.position}</span>
       <br/>
       <a href={data.surveyUrl} target="_blank">My Views</a>
