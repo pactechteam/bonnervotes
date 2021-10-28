@@ -1,0 +1,84 @@
+
+@import '../variables.scss';
+
+// Page //
+
+.homePage {
+  display: block;
+}
+
+
+// Endorsed Section //
+
+.endorsedSection {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  min-height: 100px;
+
+  .endorsedHeading {
+    display: none;
+
+    h3 {
+      font-weight: normal;
+      color: #0C1A3D;
+    }
+  }
+
+  .endorsedGrid {
+    position: relative;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: 3em auto;
+    // gap: 2.2em;
+    // margin-top: 8em;
+
+    &::after {
+      position: absolute;
+      top: -60px;
+      left: -28px;
+      bottom: 0;
+      content: "";
+      width: 6px;
+      background: #F43737;
+    }
+  }
+}
+
+
+// All Candidates Section //
+
+.candidatesSection {
+  min-height: 60px;
+  background-color: #F7F7F7;
+  padding-bottom: 100px;
+
+  .candidatesGrid {
+    display: grid;
+  }
+
+  h3 {
+    font-weight: normal;
+    color: #77777C;
+    padding: 60px 0 40px 0;
+  }
+}
+
+
+// ... Tablet .... //
+
+@media screen and (min-width: $breakTablet) {
+
+  .endorsedSection {
+    .endorsedHeading {
+      display: block;
+      // TODO: padding-left: calc()
+    }
+  }
+
+}
+
+// ... Desktop .... //
+
+@media screen and (min-width: $breakLaptop) {
+
+}

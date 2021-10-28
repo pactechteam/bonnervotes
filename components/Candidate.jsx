@@ -1,31 +1,34 @@
-
 import React, { useState } from 'react';
-import styles from "../styles/Candidate.module.scss";
-import classNames from "classnames"
-import Image from 'next/image'
+import classNames from 'classnames';
 
+import styles from '../styles/Candidate.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+
+/**
+ * Candidate
+ */
 function Candidate({ data }) {
+  const isEndorsed = data.endorsed;
 
   return (
-    <li className={`${styles.candidate}`}>
-      <div className={classNames(styles.avatar, data.endorsed ? styles.endorsed : "")}>
+    <li className={`${styles.candidate} grid-item`}>
+
+      <div className={classNames(styles.avatar, isEndorsed ? styles.endorsed : '')}>
         {data.imgUrl != null ? (
-          <img src={data.imgUrl} alt="Candidate photo" />
+          <Image src={data.imgUrl} alt="Candidate photo" />
         ) : (
           <img src="/img/blank-img.png" alt="No photo" />
         )}
       </div>
-      <h4>{data.name}
 
-      {/* This adds the Star Badge */}
-        {/* {data.endorsed && (
-          <img className={styles.star} src="/svg/star-badge.svg" />
-        )} */}
+      <h4>{data.name}</h4>
+      <span>{data.position}</span><br />
 
-      </h4>
-      <span>{data.position}</span>
-      <br/>
-      <a href={data.surveyUrl} target="_blank">My Views</a>
+      <Link href={data.surveyUrl}>
+        <a target="_blank">My Views</a>
+      </Link>
+
     </li>
   );
 }

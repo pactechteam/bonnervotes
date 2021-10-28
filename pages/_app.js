@@ -2,22 +2,30 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-import '../styles/normalize.css';
-import '../styles/globals.css';
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import '../styles/normalize.css';
+import '../styles/globals.css';
+import '../styles/grid.scss';
+import '../styles/utils.scss';
+
+/**
+ * Site Layout
+ */
 const Layout = ({ children }) => {
   return (
     <div id="wrapper">
       <Header />
-      <main>{children}</main>
+      <main className="main">{children}</main>
       <Footer />
     </div>
   );
 }
 
+/**
+ * Application Component
+ */
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   // TODO: Move into a hook
@@ -27,10 +35,7 @@ export default function MyApp({ Component, pageProps }) {
         `[router] Moving to ${url} ${shallow ? 'with' : 'without'} shallow routing`
       );
     }
-
     router.events.on('routeChangeStart', handleRouteChange);
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method:
     return () => {
       router.events.off('routeChangeStart', handleRouteChange);
     }
