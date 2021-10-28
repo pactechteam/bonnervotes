@@ -3,25 +3,39 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'sofia-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.2;
 }
 
+a {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+               Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
 
 * {
   box-sizing: border-box;
 }
 
+/* .content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 header, footer, section {
   padding-left: 40px;
   padding-right: 40px;
+} */
+
+figure {
+  padding: 2em;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 0;
 }
 
 h3 {
@@ -38,9 +52,4 @@ p {
 img {
   width: 100%;
   height: auto;
-}
-
-.grid-item {
-  overflow: hidden;  /* NEW */
-  min-width: 0;      /* NEW; needed for Firefox */
 }

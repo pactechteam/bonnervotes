@@ -1,9 +1,58 @@
 
+// ... Phone .... //
+
 .footer {
-  height: 450px;
   background-color: #0C1A3D;
+
+  .logoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-column: 1 / span 2;
+    padding: 1em 0;
+
+    .logo {
+      // border: 1px solid black;
+      width: 152px;
+      height: 36px;
+    }
+  }
+
+  .footerNav {
+    padding: 3em 0;
+    grid-column: 3 / -1;
+    a {
+      display: block;
+      color: white;
+      padding: 0.25em 0;
+    }
+  }
 }
 
-.footerLogo {
-  padding-top: 300px;
+
+// ... Tablet .... //
+
+@media screen and (min-width: $breakTablet) {
+
+  .footer {
+    .logoBox {
+      grid-column: 1 / span 2;
+      padding: 2em 0;
+      .logo {
+        width: 214px;
+        height: 50px;
+      }
+    }
+    .footerNav {
+      grid-column: 4 / -1;
+      padding: 9em 0;
+    }
+  }
+
+}
+
+// ... Desktop .... //
+
+@media screen and (min-width: $breakLaptop) {
+
 }

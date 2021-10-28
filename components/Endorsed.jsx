@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 
-import styles from '../styles/Candidate.module.scss';
+import styles from '../styles/Endorsed.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
 /**
- * Candidate
+ * Endorsed
  */
-function Candidate({ data }) {
-  const isEndorsed = data.endorsed;
+function Endorsed({ data }) {
 
   return (
-    <li className={`${styles.candidate} grid-item`}>
+    <li className={`${styles.endorsed} grid-item`}>
 
-      <div className={classNames(styles.avatar, isEndorsed ? styles.endorsed : '')}>
+      <div className={classNames(styles.avatar)}>
         {data.imgUrl != null ? (
           <Image src={data.imgUrl} alt="Candidate photo" />
         ) : (
@@ -26,11 +25,11 @@ function Candidate({ data }) {
       <span>{data.position}</span><br />
 
       <Link href={data.surveyUrl}>
-        <a target="_blank">My Views</a>
+        <a target="_blank">My Values</a>
       </Link>
 
     </li>
   );
 }
 
-export default Candidate;
+export default Endorsed;

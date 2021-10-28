@@ -1,14 +1,10 @@
 
 // ... Phone .... //
 
-.candidate {
+.endorsed {
   grid-column: span 2;
   font-weight: normal;
   color: #0C1A3D;
-
-  .endorsed {
-    border-left: 5px solid #F43737;
-  }
 
   .avatar {
     // width: calc((100% - 80px) / 3);
@@ -55,7 +51,7 @@
 @media screen and (min-width: $breakLaptop) {
 
   .candidate {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
 }

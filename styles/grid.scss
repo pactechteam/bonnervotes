@@ -1,0 +1,70 @@
+
+// ... Phone .... //
+
+.content {
+  margin: 0 calc(14.5% - 36px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3%;
+  row-gap: 2.8em;
+}
+
+.grid-item {
+  // overflow: hidden;  /* NEW */
+  min-width: 0;      /* NEW; needed for Firefox */
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+// ... Tablet .... //
+
+@media screen and (min-width: $breakTablet) {
+
+  .content {
+    margin: 0 calc(16% - 42px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 3%;
+  }
+
+}
+
+// ... Laptop .... //
+
+@media screen and (min-width: $breakLaptop) {
+
+  .content {
+    margin: 0 15%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 3%;
+  }
+
+}
+
+// ... Desktop .... //
+
+@media screen and (min-width: $breakDesktop) {
+
+  .content {
+    margin: 0 auto;
+    max-width: 70%; // 1320px
+  }
+
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 36px;
+  }
+
+}
