@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import TextBlock from "./TextBlock";
 import styles from "../styles/Candidate.module.scss";
 import classNames from "classnames"
 import Image from 'next/image'
@@ -9,7 +8,7 @@ function Candidate({ data }) {
 
   return (
     <li className={`${styles.candidate}`}>
-      <div className={classNames(styles.avatar, data.verified ? styles.verified : "")}>
+      <div className={classNames(styles.avatar, data.endorsed ? styles.endorsed : "")}>
         {data.imgUrl != null ? (
           <img src={data.imgUrl} alt="Candidate photo" />
         ) : (
@@ -19,7 +18,7 @@ function Candidate({ data }) {
       <h4>{data.name}
 
       {/* This adds the Star Badge */}
-        {/* {data.verified && (
+        {/* {data.endorsed && (
           <img className={styles.star} src="/svg/star-badge.svg" />
         )} */}
 
