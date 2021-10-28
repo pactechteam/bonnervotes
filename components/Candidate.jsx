@@ -24,7 +24,7 @@ function Candidate({ data }) {
       <br/>
       <span>{data.position}</span>
       <br/>
-      <a>My Views</a>
+      <a href={data.surveyUrl} target="_blank">My Views</a>
     </li>
   );
 }

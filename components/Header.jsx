@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from "../styles/Header.module.scss";
+import Link from "next/link";
 
 
 function Header() {
@@ -8,13 +9,19 @@ function Header() {
       <div className={styles.taglineBox}>
         <h2 className={styles.tagline}>
           The Voting Guide
-          <br/>
+          <br />
           <em>for</em> Bonner County
         </h2>
-        <nav>
-          <a>2021 Elections</a>
-          <a>Where To Vote</a>
-          <a>Our Values</a>
+        <nav className={styles.headerNav}>
+          <Link prefetch={true} href="/">
+            <a>2021 Elections</a>
+          </Link>
+          <Link prefetch={true} href="/where-to-vote">
+            <a>Where To Vote</a>
+          </Link>
+          <Link prefetch={true} href="/our-values">
+            <a>Our Values</a>
+          </Link>
         </nav>
       </div>
       <div className={styles.logoBox}>
