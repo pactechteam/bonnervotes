@@ -9,40 +9,40 @@ import styles from '../styles/pages/Locations.module.scss';
 function Locations() {
   return (
     <article className={styles.locationsPage}>
-      <section>
+      <section className="body-copy">
         <div className="content">
 
-          <h1>Voter location information</h1>
-          <div>
+          <h1>Find your polling location. </h1>
+          <p>
+            You can view your local polling location by
             <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
-              <a target="blank">Look up your voting location here</a>
-            </Link>
-          </div>
-          <p>Please see the below list of Bonner County polling locations.</p>
+              <a target="_blank"> clicking here.</a>
+            </Link>  You can also click the list below to see all Bonner County polling locations.
+          </p>
           <figure>
-            <img src="/img/pollinglocations.png" alt="Polling place addresses" />
+            <Link href="/img/pollinglocations.png">
+              <a target="_blank">
+                <img src="/img/pollinglocations.png" alt="Polling place addresses" />
+              </a>
+            </Link>
           </figure>
           <div>
-            <ul>
-              <li>
-                Clark Fork and Lakeview will now be voting at the Clark Fork‐Hope
-                Area Senior Center located at 1001 Cedar St., Clark Fork.
-              </li>{" "}
-              <li>
-                East Priest River and West Priest River will now be co-located at
-                the Priest River Event Center located at 5399 US Highway 2 in Priest
-                River.
-              </li>{" "}
-              <li>
-                Beach will now be co-located with Washington at the First Lutheran
-                Church located at 526 Olive Ave in Sandpoint.
-              </li>{" "}
-            </ul>
+            <p>
+              <strong><em>Please Note: </em></strong>
+              <br/>
+              Clark Fork and Lakeview will now be voting at the Clark Fork‐Hope
+              Area Senior Center located at 1001 Cedar St., Clark Fork.
+              East Priest River and West Priest River will now be co-located at
+              the Priest River Event Center located at 5399 US Highway 2 in Priest
+              River. Beach will now be co-located with Washington at the First Lutheran
+              Church located at 526 Olive Ave in Sandpoint.
+            </p>
           </div>
-          <Link href="https://www.bonnercountyid.gov/departments/Elections">
-            <a target="blank">County webpage source link</a>
-          </Link>
-
+          <p>
+            <Link href="https://www.bonnercountyid.gov/departments/Elections">
+              <a target="blank">County webpage source link</a>
+            </Link>
+          </p>
         </div>
       </section>
     </article>

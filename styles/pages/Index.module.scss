@@ -5,6 +5,8 @@
 
 .homePage {
   display: block;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 
@@ -17,11 +19,13 @@
   min-height: 100px;
 
   .endorsedHeading {
-    display: none;
 
     h3 {
-      font-weight: normal;
-      color: #0C1A3D;
+      font-size: 18pt;
+      font-weight: 600;
+      color: $red;
+      padding-bottom: 30px;
+      line-height: 1.125em;
     }
   }
 
@@ -30,16 +34,16 @@
     // grid-template-columns: repeat(4, 1fr);
     // grid-template-rows: 3em auto;
     // gap: 2.2em;
-    // margin-top: 8em;
+    // margin-top: 4em;
 
     &::after {
       position: absolute;
-      top: -60px;
-      left: -28px;
-      bottom: 0;
+      top: -100px;
+      left: -6%;  // TODO: move somewhere (parent?) to attach to edge.
+      bottom: -30px;
       content: "";
-      width: 6px;
-      background: #F43737;
+      width: 7px;
+      background: $red;
     }
   }
 }
@@ -49,7 +53,7 @@
 
 .candidatesSection {
   min-height: 60px;
-  background-color: #F7F7F7;
+  background-color: $offWhite;
   padding-bottom: 100px;
 
   .candidatesGrid {
@@ -57,8 +61,9 @@
   }
 
   h3 {
+    font-size: 14pt;
     font-weight: normal;
-    color: #77777C;
+    color: $darkGrey;
     padding: 60px 0 40px 0;
   }
 }
@@ -69,16 +74,38 @@
 @media screen and (min-width: $breakTablet) {
 
   .endorsedSection {
+
     .endorsedHeading {
       display: block;
       // TODO: padding-left: calc()
     }
-  }
 
+    .endorsedGrid {
+      margin-top: 4em;
+
+      &::after {
+        position: absolute;
+        top: -160px;
+        left: -3.7%;
+      }
+    }
+  }
 }
 
 // ... Desktop .... //
 
 @media screen and (min-width: $breakLaptop) {
 
+  .endorsedSection {
+
+    .endorsedGrid {
+      margin-top: 4em;
+
+      &::after {
+        position: absolute;
+        top: -160px;
+        left: -3.7%;
+      }
+    }
+  }
 }

@@ -2,25 +2,27 @@
 // ... Phone .... //
 
 .footer {
-  background-color: #0C1A3D;
+  background-color: $darkBlue;
 
   .logoBox {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     grid-column: 1 / span 2;
-    padding: 1em 0;
+    padding: 5em 6em 2em 0;
 
     .logo {
-      // border: 1px solid black;
-      width: 152px;
+      // border: 1px solid red;
+      width: 160px;
       height: 36px;
     }
   }
 
   .footerNav {
+    display: none;
     padding: 3em 0;
     grid-column: 3 / -1;
+
     a {
       display: block;
       color: white;
@@ -37,22 +39,29 @@
   .footer {
     .logoBox {
       grid-column: 1 / span 2;
-      padding: 2em 0;
+      padding: 12em 6em 3.5em 0;
+
       .logo {
         width: 214px;
         height: 50px;
       }
     }
     .footerNav {
+      display: none;
       grid-column: 4 / -1;
       padding: 9em 0;
     }
   }
-
 }
 
 // ... Desktop .... //
 
 @media screen and (min-width: $breakLaptop) {
+  .footer {
 
+    .logoBox {
+      padding: 15em 6em 5em 0;
+    }
+
+  }
 }
