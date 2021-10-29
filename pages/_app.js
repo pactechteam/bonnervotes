@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import '../styles/normalize.css';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import '../styles/grid.scss';
 import '../styles/utils.scss';
 

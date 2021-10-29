@@ -26,7 +26,7 @@ function Candidate({ data }) {
       <span>{data.position}</span><br />
 
       <Link href={data.surveyUrl}>
-        <a target="_blank">My Views</a>
+        <a className={classNames(isEndorsed ? styles.endorsedLink : '')} target="_blank">My Views</a>
       </Link>
 
     </li>

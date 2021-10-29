@@ -1,5 +1,30 @@
 
-  // Breakpoints
-  $breakTablet: 768px;
-  $breakLaptop: 1280px;
-  $breakDesktop: 1640px;
+// Breakpoints
+
+$breakTablet: 768px;
+$breakLaptop: 1280px;
+$breakDesktop: 1640px;
+
+
+// Typography
+
+$sofia: 'sofia-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$helvetica: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+               Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+// Colors
+
+$red: #F43737;
+$darkBlue: #0C1A3D;
+$blue: #103389;
+$lightBlue: #1B5CDD;
+$offWhite: #F7F7F7;
+$lightGrey: #EFEFF0;
+$grey: #BABABE;
+$darkGrey: #77777C;
+
+
+// Measurements
+
+$redLine: 8.5px;

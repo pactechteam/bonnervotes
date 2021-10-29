@@ -1,3 +1,4 @@
+import {useState} from "react"
 import Link from 'next/link';
 
 import styles from '../styles/Header.module.scss';
@@ -6,6 +7,21 @@ import styles from '../styles/Header.module.scss';
  * Page Header
  */
 function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu(e) {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  }
+
+  function closeMenu(e) {
+    setIsOpen(false);
+    console.log("success");
+  }
+
+  const toggleClass = isOpen ? 'open' : '';
+
   return (
     <header className={styles.header}>
 
@@ -17,26 +33,32 @@ function Header() {
 
       <div className={styles.navControlBg}>&nbsp;</div>
 
-      <div className={styles.navContainer}>
+      <div className={`${toggleClass} ${styles.navContainer}`}>
         <h2 className={styles.tagline}>
           The Voting Guide<br />
           <em>for</em> Bonner County
         </h2>
-        <nav className={styles.headerNav}>
+        <nav className={`${styles.headerNav}`}>
           <Link href="/">
-            <a>2021 Elections</a>
+            <a onClick={closeMenu}>2021 Elections</a>
           </Link>
           <Link href="/where-to-vote">
-            <a>Where To Vote</a>
+            <a onClick={closeMenu}>Where To Vote</a>
           </Link>
           <Link href="/our-values">
-            <a>Our Values</a>
+            <a onClick={closeMenu}>Our Values</a>
           </Link>
         </nav>
       </div>
 
-      <div className={styles.navControl}>
-        <a href="#">X</a>
+      <div className={`${styles.navControl}`}>
+        <a href="#" onClick={toggleMenu}>
+          {isOpen ? (
+            <img src="/svg/close-icon.svg" />
+          ) : (
+              <img src="/svg/menu-icon.svg" />
+          )}
+        </a>
       </div>
 
     </header>
@@ -44,3 +66,5 @@ function Header() {
 }
 
 export default Header;
+
+
