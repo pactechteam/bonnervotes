@@ -1,12 +1,14 @@
 import {useState} from "react"
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
 import styles from '../styles/Header.module.scss';
 
 /**
  * Page Header
  */
 function Header() {
+
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +23,11 @@ function Header() {
   }
 
   const toggleClass = isOpen ? 'open' : '';
+
+  function activeIf(path) {
+    return router.pathname === path ? styles.active : '';
+  }
+
 
   return (
     <header className={styles.header}>
@@ -40,13 +47,16 @@ function Header() {
         </h2>
         <nav className={`${styles.headerNav}`}>
           <Link href="/">
-            <a onClick={closeMenu}>2021 Elections</a>
+            <a className={activeIf("/")} onClick={closeMenu}>2021 Elections</a>
           </Link>
           <Link href="/where-to-vote">
-            <a onClick={closeMenu}>Where To Vote</a>
+              <a className={activeIf("/where-to-vote")} onClick={closeMenu}>Where To Vote</a>
           </Link>
           <Link href="/our-values">
-            <a onClick={closeMenu}>Our Values</a>
+            <a className={activeIf("/our-values")} onClick={closeMenu}>Our Values</a>
+          </Link>
+          <Link href="http://bonnercountygop.com/">
+            <a onClick={closeMenu} target="_blank">GOP Slate</a>
           </Link>
         </nav>
       </div>

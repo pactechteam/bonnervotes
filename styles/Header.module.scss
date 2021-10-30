@@ -40,6 +40,7 @@ $menuPadding: 40px;
 
     .tagline {
       font-family: $sofia;
+      font-size: 1.8em;
       line-height: 1.2;
       font-weight: 500;
       color: white;
@@ -47,7 +48,6 @@ $menuPadding: 40px;
       padding-top: 15px;
       padding-bottom: 20px;
 
-      // display: none;
     }
 
     .headerNav {
@@ -57,9 +57,13 @@ $menuPadding: 40px;
         display: block;
         font-style: normal;
         font-weight: 400;
-        font-size: 12pt;
+        font-size: 1.3em;
         color: white;
         padding: 0.6em 0;
+
+        &.active {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -84,8 +88,8 @@ $menuPadding: 40px;
     a {
       display: block;
       // border: red solid 2px;
-      width: 59px;
-      padding: 16px 22px 20px 20px;
+      width: 60px;
+      padding: 16px;
     }
   }
 
@@ -128,9 +132,14 @@ $menuPadding: 40px;
         padding-top: 56px;
       }
       .headerNav {
+        width: 200px;
+        height: 120px;
+        column-count: 2;
+        column-gap: 20px;
+        column-width: 160px;
 
         a {
-          font-size: 12.75pt;
+          font-size: 1.1em;
           padding: 0.5em 0;
         }
       }
