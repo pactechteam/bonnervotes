@@ -51,7 +51,8 @@
         "endorsed": false,
         "slug": "jason-welker",
         "party": "Democrat",
-        "incumbent": false
+        "incumbent": false,
+        "noResponse": true
     },
     {
         "name": "Joel Aispuro",
