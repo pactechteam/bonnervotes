@@ -40,8 +40,9 @@ export default function OurValues() {
           </p>
           <p>
             <strong>American Exceptionalism</strong> — The United States of
-            America was founded on principles endowed by our Creator The
-            Constitution - We have been gifted a nation built upon law based
+            America was founded on principles endowed by our Creator.
+
+            <strong>The Constitution</strong> - We have been gifted a nation built upon law based
             in The Constitution, which must be interpreted and implemented as
             it was originally intended by the Founding Fathers.
           </p>
