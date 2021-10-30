@@ -34,7 +34,7 @@ function Candidate({ data }) {
           isEndorsed ? styles.endorsedLink : '',
           noResponse ? styles.noResponseLink : '',
           )} target="_blank">
-          {noResponse ? "No Comment" : "My Views"}
+          {noResponse ? "Declined to Respond" : "My Views"}
         </a>
       </Link>
 
