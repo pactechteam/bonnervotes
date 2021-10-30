@@ -10,23 +10,32 @@ import Link from 'next/link';
  */
 function Candidate({ data }) {
   const isEndorsed = data.endorsed;
+  const noResponse = data.noResponse;
 
   return (
     <li className={`${styles.candidate} grid-item`}>
 
       <div className={classNames(styles.avatar, isEndorsed ? styles.endorsed : '')}>
-        {data.imgUrl != null ? (
-          <Image src={data.imgUrl} alt="Candidate photo" />
+        {! data.missingImg ? (
+          <img src={`/img/candidates/${data.slug}.jpg`} onError={(e) => { e.target.onerror = null; e.target.src = "/img/blank-img.png" }} alt="Candidate photo" />
+          // <object data="/img/blank-img.png" type="image/png" style={{width: "100%"}}>
+          //   <img src={`/img/candidates/${data.slug}.jpg`} alt="Photo" />
+          // </object>
         ) : (
           <img src="/img/blank-img.png" alt="No photo" />
         )}
       </div>
 
-      <h4>{data.name}</h4>
-      <span>{data.position}</span><br />
+      <h4 className={data.endorsed ? "star-badge" : ''}>{data.name}<span>&nbsp;</span></h4>
+      <span>{data.position}</span><br/>
 
       <Link href={data.surveyUrl}>
-        <a className={classNames(isEndorsed ? styles.endorsedLink : '')} target="_blank">My Views</a>
+        <a className={classNames(
+          isEndorsed ? styles.endorsedLink : '',
+          noResponse ? styles.noResponseLink : '',
+          )} target="_blank">
+          {noResponse ? "No Comment" : "My Views"}
+        </a>
       </Link>
 
     </li>

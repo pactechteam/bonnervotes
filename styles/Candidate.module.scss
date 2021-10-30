@@ -8,7 +8,8 @@
 
   .endorsed {
     box-sizing: border-box;
-    border-left: $redLine solid $red; // TODO: find a prop to fix avatar baseline shift
+    // border-left: $redLine solid $red;
+    // TODO: find a prop to fix avatar baseline shift
   }
 
   .avatar {
@@ -37,12 +38,28 @@
     text-decoration: underline;
     font-weight: 400;
     line-height: 2.6; // var * 2
+    &:hover {
+      color: lighten($darkBlue, 20%);
+    }
   }
 
   .endorsedLink {
     color: $red;
+
+    &:hover {
+      color: lighten($red, 10%);
+
+    }
   }
 
+  .noResponseLink {
+    color: $grey;
+
+        &:hover {
+      color: darken($grey, 10%);
+
+    }
+  }
 }
 
 
