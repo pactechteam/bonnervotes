@@ -41,7 +41,8 @@ export default function OurValues() {
           <p>
             <strong>American Exceptionalism</strong> — The United States of
             America was founded on principles endowed by our Creator.
-
+          </p>
+          <p>
             <strong>The Constitution</strong> - We have been gifted a nation built upon law based
             in The Constitution, which must be interpreted and implemented as
             it was originally intended by the Founding Fathers.

@@ -29,14 +29,16 @@ function Candidate({ data }) {
       <h4 className={data.endorsed ? "star-badge" : ''}>{data.name}<span>&nbsp;</span></h4>
       <span>{data.position}</span><br/>
 
-      <Link href={data.surveyUrl}>
-        <a className={classNames(
-          isEndorsed ? styles.endorsedLink : '',
-          noResponse ? styles.noResponseLink : '',
+      {data.surveyUrl != null && (
+        <Link href={data.surveyUrl}>
+          <a className={classNames(
+            isEndorsed ? styles.endorsedLink : '',
+            noResponse ? styles.noResponseLink : '',
           )} target="_blank">
-          {noResponse ? "Declined to Respond" : "My Views"}
-        </a>
-      </Link>
+            {noResponse ? "Declined to Respond" : "My Views"}
+          </a>
+        </Link>
+      )}
 
     </li>
   );

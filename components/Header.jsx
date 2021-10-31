@@ -33,9 +33,11 @@ function Header() {
     <header className={styles.header}>
 
       <div className={styles.logoBox}>
-        <div className={styles.logo}>
-          <img src="/svg/logo_main.svg" alt="Bonner Votes" />
-        </div>
+        <Link href="/">
+          <a className={styles.logo}>
+            <img src="/svg/logo_main.svg" alt="Bonner Votes" />
+          </a>
+        </Link>
       </div>
 
       <div className={styles.navControlBg}>&nbsp;</div>
