@@ -10,9 +10,7 @@ import candidateData from "../data/candidate-data.json";
  */
 
 function Home() {
-
   return (
-
     <article className={styles.homePage}>
       {/*  Idaho True Conservatives */}
       <section id="endorsed" className={styles.endorsedSection}>
@@ -31,7 +29,8 @@ function Home() {
               data={{
                 name: "Robert Rutan",
                 position: "Kootenai City Council",
-                surveyUrl: "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Kootenai-Seat-1.pdf",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Kootenai-Seat-1.pdf",
                 slug: "robert-rutan",
               }}
             />
@@ -39,7 +38,8 @@ function Home() {
               data={{
                 name: "Merlin Glass",
                 position: "Dover City Council",
-                surveyUrl: "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Dover-Council-Member.pdf",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Dover-Council-Member.pdf",
                 slug: "merlin-glass",
               }}
             />
@@ -47,7 +47,8 @@ function Home() {
               data={{
                 name: "Keith Rutledge",
                 position: "West Bonner County School Board",
-                surveyUrl: "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-4.pdf",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-4.pdf",
                 slug: "keith-rutledge",
               }}
             />
@@ -55,7 +56,8 @@ function Home() {
               data={{
                 name: "Susan Brown",
                 position: "West Bonner County School Board",
-                surveyUrl: "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-2.pdf",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-2.pdf",
                 slug: "susan-brown",
               }}
             />
@@ -63,7 +65,8 @@ function Home() {
               data={{
                 name: "Jalon Peters",
                 position: "Lake Pend Orielle School Board",
-                surveyUrl: "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-Lake-Pend-Oreille-School-District-Zone-2.pdf",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-Lake-Pend-Oreille-School-District-Zone-2.pdf",
                 slug: "jalon-peters",
               }}
             />
@@ -77,7 +80,7 @@ function Home() {
           <div className={styles.titleBox}>
             <h3>All Candidates</h3>
             <p>
-              *Endorsed <img src="/svg/star-badge.svg" />
+              *Recommended <img src="/svg/star-badge.svg" />
             </p>
           </div>
           <ul className={`${styles.candidatesGrid} grid`}>
