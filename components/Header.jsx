@@ -1,13 +1,12 @@
-import {useState} from "react"
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import styles from '../styles/Header.module.scss';
+import { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from "../styles/Header.module.scss";
 
 /**
  * Page Header
  */
 function Header() {
-
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +21,14 @@ function Header() {
     console.log("success");
   }
 
-  const toggleClass = isOpen ? 'open' : '';
+  const toggleClass = isOpen ? "open" : "";
 
   function activeIf(path) {
-    return router.pathname === path ? styles.active : '';
+    return router.pathname === path ? styles.active : "";
   }
-
 
   return (
     <header className={styles.header}>
-
       <div className={styles.logoBox}>
         <Link href="/">
           <a className={styles.logo}>
@@ -44,21 +41,39 @@ function Header() {
 
       <div className={`${toggleClass} ${styles.navContainer}`}>
         <h2 className={styles.tagline}>
-          The Voting Guide<br />
+          The Voting Guide
+          <br />
           <em>for</em> Bonner County
         </h2>
         <nav className={`${styles.headerNav}`}>
           <Link href="/">
-            <a className={activeIf("/")} onClick={closeMenu}>2021 Elections</a>
+            <a className={activeIf("/")} onClick={closeMenu}>
+              2022 Elections
+            </a>
           </Link>
           <Link href="/where-to-vote">
-              <a className={activeIf("/where-to-vote")} onClick={closeMenu}>Where To Vote</a>
+            <a className={activeIf("/where-to-vote")} onClick={closeMenu}>
+              Where To Vote
+            </a>
           </Link>
           <Link href="/our-values">
-            <a className={activeIf("/our-values")} onClick={closeMenu}>Our Values</a>
+            <a className={activeIf("/our-values")} onClick={closeMenu}>
+              Our Values
+            </a>
           </Link>
-          <Link href="http://bonnercountygop.com/">
-            <a onClick={closeMenu} target="_blank">GOP Slate</a>
+          <Link href="https://pacfilespublic.s3.us-west-2.amazonaws.com/22_pac_slate.pdf">
+            <a
+              className={activeIf("/22_pac_slate.pdf")}
+              onClick={closeMenu}
+              target="_blank"
+            >
+              Printable slate
+            </a>
+          </Link>
+          <Link href="https://bonnergop.org/voter-guide/">
+            <a onClick={closeMenu} target="_blank">
+              GOP Slate
+            </a>
           </Link>
         </nav>
       </div>
@@ -68,15 +83,12 @@ function Header() {
           {isOpen ? (
             <img src="/svg/close-icon.svg" />
           ) : (
-              <img src="/svg/menu-icon.svg" />
+            <img src="/svg/menu-icon.svg" />
           )}
         </a>
       </div>
-
     </header>
   );
 }
 
 export default Header;
-
-

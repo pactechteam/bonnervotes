@@ -27,54 +27,81 @@ function Home() {
             {/* Data */}
             <Endorsed
               data={{
-                name: "Robert Rutan",
-                position: "Kootenai City Council",
-                surveyUrl:
-                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Kootenai-Seat-1.pdf",
-                slug: "robert-rutan",
+                name: "Janice McGeachin",
+                position: "Governor",
+                website: "https://janiceforidaho.com/",
+                surveyUrl: "",
+                slug: "Janice-mcgeachin",
               }}
             />
             <Endorsed
               data={{
-                name: "Merlin Glass",
-                position: "Dover City Council",
-                surveyUrl:
-                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-City-of-Dover-Council-Member.pdf",
-                slug: "merlin-glass",
+                name: "Priscilla Giddings",
+                position: "Lt. Governor",
+                website: "https://www.giddingsforidaho.com/",
+                surveyUrl: "",
+                slug: "priscilla-giddings",
               }}
             />
             <Endorsed
               data={{
-                name: "Keith Rutledge",
-                position: "West Bonner County School Board",
-                surveyUrl:
-                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-4.pdf",
-                slug: "keith-rutledge",
+                name: "Dorothy Moon",
+                position: "Secretary of State",
+                website: "https://dorothymoon.com/",
+                surveyUrl: "",
+                slug: "dorothy-moon",
               }}
             />
             <Endorsed
               data={{
-                name: "Susan Brown",
-                position: "West Bonner County School Board",
-                surveyUrl:
-                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-West-Bonner-County-School-District-Zone-2.pdf",
-                slug: "susan-brown",
+                name: "Branden Durst",
+                position: "Secretary of State",
+                website: "https://www.durstforidaho.com/",
+                surveyUrl: "",
+                slug: "branden-durst",
               }}
             />
             <Endorsed
               data={{
-                name: "Jalon Peters",
-                position: "Lake Pend Orielle School Board",
-                surveyUrl:
-                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2021/10/Watchmen-Voter-Guide-for-Lake-Pend-Oreille-School-District-Zone-2.pdf",
-                slug: "jalon-peters",
+                name: "Asia Williams",
+                position: "Bonner County Commissioner Dist. 2",
+                website: "https://voteasiawilliams.com/",
+                surveyUrl: "",
+                slug: "asia-williams",
+              }}
+            />
+            <Endorsed
+              data={{
+                name: "Grant Dorman",
+                position: "Bonner County Assessor",
+                website: "https://grantdorman.com/",
+                surveyUrl: "",
+                slug: "grant-dorman",
+              }}
+            />
+            <Endorsed
+              data={{
+                name: "Scott Herndon",
+                position: "State Senator Legislative District 1",
+                website: "https://herndonforidaho.com/",
+                surveyUrl: "",
+                slug: "scott-herndon",
+              }}
+            />
+            <Endorsed
+              data={{
+                name: "Todd Engel",
+                position: "State Representative Legislative District 1B",
+                website: "https://engelforidaho.com/",
+                surveyUrl: "",
+                slug: "todd-engel",
               }}
             />
           </ul>
         </div>
       </section>
-
-      {/*  All Candidates */}
+      {/* 
+      {/*  All Candidates
       <section id="all-candidates" className={styles.candidatesSection}>
         <div className="content">
           <div className={styles.titleBox}>
@@ -89,7 +116,8 @@ function Home() {
             ))}
           </ul>
         </div>
-      </section>
+      </section>{" "}
+      */}
     </article>
   );
 }
