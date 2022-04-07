@@ -81,6 +81,15 @@ function Home() {
             />
             <Endorsed
               data={{
+                name: "Clorrisa Koster",
+                position: "Bonner County Assessor",
+                website: "https://www.clorrisakoster.com/",
+                surveyUrl: "",
+                slug: "clorrisa-koster",
+              }}
+            />
+            <Endorsed
+              data={{
                 name: "Scott Herndon",
                 position: "State Senator Legislative District 1",
                 website: "https://herndonforidaho.com/",
