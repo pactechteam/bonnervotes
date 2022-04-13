@@ -55,7 +55,7 @@ function Home() {
             <Endorsed
               data={{
                 name: "Branden Durst",
-                position: "Secretary of State",
+                position: "State Superintendent",
                 website: "https://www.durstforidaho.com/",
                 surveyUrl: "",
                 slug: "branden-durst",

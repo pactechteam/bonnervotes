@@ -35,8 +35,15 @@ function Endorsed({ data }) {
       <span>{data.position}</span>
       <br />
 
+      {data.surveyUrl !== undefined && data.surveyUrl !== "" && (
+        <div>
+          <Link href={data.surveyUrl}>
+            <a target="_blank">My Views</a>
+          </Link>
+        </div>
+      )}
       <Link href={data.website}>
-        <a target="_blank">Website</a>
+        <a target="_blank">My Website</a>
       </Link>
     </li>
   );
