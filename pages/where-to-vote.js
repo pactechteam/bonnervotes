@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import styles from '../styles/pages/Locations.module.scss';
+import styles from "../styles/pages/Locations.module.scss";
 
 /**
  * Locations Page
@@ -11,22 +11,21 @@ function Locations() {
     <article className={styles.locationsPage}>
       <section className="body-copy">
         <div className="content">
-
           <h1>Find your polling location. </h1>
           <p>
             You can view your local polling location by
             <Link href="https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx">
               <a target="_blank"> clicking here.</a>
-            </Link>  You can also click the list below to see all Bonner County polling locations.
+            </Link>
           </p>
-          <figure>
+          {/* <figure>
             <Link href="/img/pollinglocations.png">
               <a target="_blank">
                 <img src="/img/pollinglocations.png" alt="Polling place addresses" />
               </a>
             </Link>
-          </figure>
-          <div>
+          </figure> */}
+          {/* <div>
             <p>
               <strong><em>Please Note: </em></strong>
               <br/>
@@ -37,7 +36,7 @@ function Locations() {
               River. Beach will now be co-located with Washington at the First Lutheran
               Church located at 526 Olive Ave in Sandpoint.
             </p>
-          </div>
+          </div> */}
           <p>
             <Link href="https://www.bonnercountyid.gov/departments/Elections">
               <a target="blank">County webpage source link</a>
