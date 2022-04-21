@@ -30,7 +30,8 @@ function Home() {
                 name: "Janice McGeachin",
                 position: "Governor",
                 website: "https://janiceforidaho.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Idaho-Governor-4.pdf",
                 slug: "Janice-mcgeachin",
               }}
             />
@@ -39,7 +40,8 @@ function Home() {
                 name: "Priscilla Giddings",
                 position: "Lt. Governor",
                 website: "https://www.giddingsforidaho.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Idaho-Lieutenant-Governor.pdf",
                 slug: "priscilla-giddings",
               }}
             />
@@ -48,7 +50,8 @@ function Home() {
                 name: "Dorothy Moon",
                 position: "Secretary of State",
                 website: "https://dorothymoon.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Idaho-Secretary-of-State-1.pdf",
                 slug: "dorothy-moon",
               }}
             />
@@ -57,7 +60,8 @@ function Home() {
                 name: "Branden Durst",
                 position: "State Superintendent",
                 website: "https://www.durstforidaho.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Idaho-Superintendent-of-Public-Instruction-1.pdf",
                 slug: "branden-durst",
               }}
             />
@@ -66,7 +70,8 @@ function Home() {
                 name: "Asia Williams",
                 position: "Bonner County Commissioner Dist. 2",
                 website: "https://voteasiawilliams.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Bonner-County-Commissioner-District-2b.pdf",
                 slug: "asia-williams",
               }}
             />
@@ -75,7 +80,8 @@ function Home() {
                 name: "Grant Dorman",
                 position: "Bonner County Assessor",
                 website: "https://grantdorman.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Bonner-County-Assessor.pdf",
                 slug: "grant-dorman",
               }}
             />
@@ -84,7 +90,8 @@ function Home() {
                 name: "Clorrisa Koster",
                 position: "Bonner County Assessor",
                 website: "https://www.clorrisakoster.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Bonner-County-Treasurer.pdf",
                 slug: "clorrisa-koster",
               }}
             />
@@ -93,7 +100,8 @@ function Home() {
                 name: "Scott Herndon",
                 position: "State Senator Legislative District 1",
                 website: "https://herndonforidaho.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Legislative-District-1-State-Senator.pdf",
                 slug: "scott-herndon",
               }}
             />
@@ -102,7 +110,8 @@ function Home() {
                 name: "Todd Engel",
                 position: "State Representative Legislative District 1B",
                 website: "https://engelforidaho.com/",
-                surveyUrl: "",
+                surveyUrl:
+                  "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Legislative-District-1-State-Representative-Position-B-2.pdf",
                 slug: "todd-engel",
               }}
             />
