@@ -88,7 +88,7 @@ function Home() {
             <Endorsed
               data={{
                 name: "Clorrisa Koster",
-                position: "Bonner County Assessor",
+                position: "Bonner County Treasurer",
                 website: "https://www.clorrisakoster.com/",
                 surveyUrl:
                   "https://secureservercdn.net/198.71.233.39/amv.995.myftpupload.com/wp-content/uploads/2022/04/Watchmen-Voter-Guide-for-Bonner-County-Treasurer.pdf",
