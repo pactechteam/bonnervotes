@@ -12,6 +12,18 @@ const WhyVotePage = (props) => {
             Conservatives candidates on May 17th!{" "}
           </p>
           <p>“The ballot is stronger than the bullet.” President Lincoln</p>
+
+          <div>
+            <iframe
+              src="https://player.vimeo.com/video/705884417?h=a9546228aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              title="whyvote.MP4"
+              width="640"
+              height="480"
+            ></iframe>
+          </div>
         </div>
       </section>
     </article>
