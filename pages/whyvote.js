@@ -24,6 +24,13 @@ const WhyVotePage = (props) => {
               height="480"
             ></iframe>
           </div>
+          <p>
+            Note, this video comes from our friends over at Citizens Alliance
+            for Idaho. You can learn more about them{" "}
+            <a href="http://citizensallianceidaho.org/pledge" target="_blank">
+              here
+            </a>
+          </p>
         </div>
       </section>
     </article>
