@@ -15,7 +15,7 @@ const WhyVotePage = (props) => {
 
           <div>
             <iframe
-              src="https://player.vimeo.com/video/705884417?h=a9546228aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              src="https://player.vimeo.com/video/703934143?h=f7273bc072&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen
