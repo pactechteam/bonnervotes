@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from '../styles/Footer.module.scss';
+import styles from "../styles/Footer.module.scss";
 
 /**
  * Page Footer
@@ -8,26 +8,30 @@ import styles from '../styles/Footer.module.scss';
 function Footer() {
   return (
     <footer className={styles.footer}>
-    <div className="content grid">
-
-      <div className={styles.logoBox}>
-        <div className={styles.logo}>
-          <img src="/svg/logo_footer.svg" alt="Bonner Votes" />
+      <div className="content grid">
+        {/* <div className={styles.logoBox}>
+          <div className={styles.logo}>
+            <img src="/svg/logo_footer.svg" alt="Bonner Votes" />
+          </div>
+        </div> */}
+        <div style={{ color: "white" }}>
+          paid for by{" "}
+          <a href="https://www.forwardidaho.com/" target="_blank">
+            Forward Idaho Inc.
+          </a>
         </div>
+        <nav className={styles.footerNav}>
+          <Link href="/">
+            <a>2021 Elections</a>
+          </Link>
+          <Link href="/where-to-vote">
+            <a>Where To Vote</a>
+          </Link>
+          <Link href="/our-values">
+            <a>Our Values</a>
+          </Link>
+        </nav>
       </div>
-
-      <nav className={styles.footerNav}>
-        <Link href="/">
-          <a>2021 Elections</a>
-        </Link>
-        <Link href="/where-to-vote">
-          <a>Where To Vote</a>
-        </Link>
-        <Link href="/our-values">
-          <a>Our Values</a>
-        </Link>
-      </nav>
-    </div>
     </footer>
   );
 }
