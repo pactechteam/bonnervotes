@@ -48,7 +48,7 @@ function Header() {
         <nav className={`${styles.headerNav}`}>
           <Link href="/">
             <a className={activeIf("/")} onClick={closeMenu}>
-              2022 Elections
+              2023 May Elections
             </a>
           </Link>
           <Link href="/where-to-vote">
@@ -61,7 +61,7 @@ function Header() {
               Our Values
             </a>
           </Link>
-          <Link href="https://pacfilespublic.s3.us-west-2.amazonaws.com/22_pac_slate.pdf">
+          {/* <Link href="https://pacfilespublic.s3.us-west-2.amazonaws.com/22_pac_slate.pdf">
             <a
               className={activeIf("/22_pac_slate.pdf")}
               onClick={closeMenu}
@@ -69,12 +69,12 @@ function Header() {
             >
               Printable slate
             </a>
-          </Link>
-          <Link href="https://bonnergop.org/voter-guide/">
+          </Link> */}
+          {/* <Link href="https://bonnergop.org/voter-guide/">
             <a onClick={closeMenu} target="_blank">
               GOP Slate
             </a>
-          </Link>
+          </Link> */}
           <Link href="/whyvote">
             <a onClick={closeMenu} target="_blank">
               Why vote

@@ -4,11 +4,11 @@
 .candidate {
   grid-column: span 2;
   font-weight: normal;
-  color: $darkBlue;
+  color: #0C1A3D;
 
   .endorsed {
     box-sizing: border-box;
-    // border-left: 7px solid $red;
+    // border-left: 7px solid #F43737;
     // TODO: find a prop to fix avatar baseline shift
   }
 
@@ -18,7 +18,7 @@
   }
 
   h4 {
-    font-family: $sofia;
+    font-family: 'sofia-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 14.5pt;
     font-weight: 525;
     line-height: 1.45;
@@ -39,24 +39,24 @@
     font-weight: 400;
     line-height: 2.6; // var * 2
     &:hover {
-      color: lighten($darkBlue, 20%);
+      color: lighten(#0C1A3D, 20%);
     }
   }
 
   .endorsedLink {
-    color: $red;
+    color: #F43737;
 
     &:hover {
-      color: lighten($red, 10%);
+      color: lighten(#F43737, 10%);
 
     }
   }
 
   .noResponseLink {
-    color: $grey;
+    color: #BABABE;
 
         &:hover {
-      color: darken($grey, 10%);
+      color: darken(#BABABE, 10%);
 
     }
   }
@@ -65,7 +65,7 @@
 
 // ... Tablet .... //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   .candidate {
     grid-column: span 2;
@@ -75,7 +75,7 @@
 
 // ... Laptop .... //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
 
   .candidate {
     grid-column: span 2;

@@ -12,7 +12,7 @@ $menuPadding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $blue;
+    background-color: #103389;
     height: 180px;
     margin-right: 3.7em;
     z-index: 100;
@@ -32,7 +32,7 @@ $menuPadding: 40px;
     right: 0;
     bottom: 0;
     left: calc(14.5% - 36px);
-    background-color: $darkBlue;
+    background-color: #0C1A3D;
     z-index: 200;
 
     .open {
@@ -40,7 +40,7 @@ $menuPadding: 40px;
     }
 
     .tagline {
-      font-family: $sofia;
+      font-family: 'sofia-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
       font-size: 1.8em;
       line-height: 1.2;
       font-weight: 500;
@@ -73,7 +73,7 @@ $menuPadding: 40px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: $darkBlue;
+    background-color: #0C1A3D;
     width: 26%;
     height: 12.5em;
   }
@@ -99,7 +99,7 @@ $menuPadding: 40px;
 
 // ... Tablet .... //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   .header {
 
@@ -154,7 +154,7 @@ $menuPadding: 40px;
 
 // ... Desktop .... //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
 
 $menuPadding: 40px;
 

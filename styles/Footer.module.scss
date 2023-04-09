@@ -2,7 +2,7 @@
 // ... Phone .... //
 
 .footer {
-  background-color: $darkBlue;
+  background-color: #0C1A3D;
 
   .logoBox {
     display: flex;
@@ -34,7 +34,7 @@
 
 // ... Tablet .... //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   .footer {
     .logoBox {
@@ -56,7 +56,7 @@
 
 // ... Desktop .... //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
   .footer {
 
     .logoBox {

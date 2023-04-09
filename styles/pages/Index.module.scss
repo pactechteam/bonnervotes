@@ -23,7 +23,7 @@
     h3 {
       font-size: 18pt;
       font-weight: 600;
-      color: $red;
+      color: #F43737;
       padding-bottom: 30px;
       line-height: 1.125em;
     }
@@ -43,7 +43,7 @@
       bottom: -30px;
       content: "";
       width: 7px;
-      background: $red;
+      background: #F43737;
     }
   }
 }
@@ -74,7 +74,7 @@
     }
 
     p {
-      color: $red;
+      color: #F43737;
       font-style: italic;
       height: .8em;
       flex: 1;
@@ -94,7 +94,7 @@
 
 // ... Tablet .... //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   .endorsedSection {
 
@@ -117,7 +117,7 @@
 
 // ... Desktop .... //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
 
   .endorsedSection {
 

@@ -24,7 +24,12 @@ function Endorsed({ data }) {
             height="750px"
           />
         ) : (
-          <Image src="/img/blank-img.png" alt="No photo" />
+          <Image
+            src="/img/blank-img.png"
+            width="600px"
+            height="750px"
+            alt="No photo"
+          />
         )}
       </div>
 
@@ -42,9 +47,11 @@ function Endorsed({ data }) {
           </Link>
         </div>
       )}
-      <Link href={data.website}>
-        <a target="_blank">My Website</a>
-      </Link>
+      {data.website !== undefined && data.website !== "" && (
+        <Link href={data.website}>
+          <a target="_blank">My Website</a>
+        </Link>
+      )}
     </li>
   );
 }

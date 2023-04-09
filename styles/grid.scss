@@ -25,7 +25,7 @@
 
 // ... Tablet .... //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   .content {
     margin: 0 calc(16% - 42px);
@@ -40,7 +40,7 @@
 
 // ... Laptop .... //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
 
   .content {
     margin: 0 15%;
@@ -55,7 +55,7 @@
 
 // ... Desktop .... //
 
-@media screen and (min-width: $breakDesktop) {
+@media screen and (min-width: 1640px) {
 
   .content {
     margin: 0 auto;

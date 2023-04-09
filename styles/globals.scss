@@ -3,12 +3,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: $helvetica;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+               Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
   line-height: 1.2;
 }
 
 a {
-  font-family: $helvetica;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+               Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
   color: inherit;
   text-decoration: underline;
 }
@@ -35,7 +37,7 @@ article {
 nav {
 
   a {
-    font-family: $sofia;
+    font-family: 'sofia-pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     text-decoration: none;
   }
 }
@@ -53,14 +55,14 @@ ul {
 h1 {
   font-size: 20pt;
   font-weight: 700;
-  color: $darkBlue;
+  color: #0C1A3D;
   padding-top: 30px;
   padding-bottom: 20px;
   line-height: 1.125em;
 }
 
 h3 {
-  color: $darkBlue;
+  color: #0C1A3D;
   margin-top: .8em;
   margin-bottom: .1em;
 }
@@ -86,7 +88,7 @@ img {
 
 // Media for Tablet //
 
-@media screen and (min-width: $breakTablet) {
+@media screen and (min-width: 768px) {
 
   article {
     padding-top: 90px;
@@ -99,7 +101,7 @@ img {
 
 // Media for Desktop //
 
-@media screen and (min-width: $breakLaptop) {
+@media screen and (min-width: 1280px) {
 
   article {
     padding-top: 90px;
