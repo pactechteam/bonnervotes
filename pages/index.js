@@ -24,14 +24,15 @@ function Home() {
           </div>
         </div>
       </section>
-      All Candidates
+      Candidates And Propositions
       <section id="all-candidates" className={styles.candidatesSection}>
         <div className="content">
           <div className={styles.titleBox}>
-            <h3>All Candidates</h3>
-            <p>
-              *Recommended <img src="/svg/star-badge.svg" />
-            </p>
+            <h3>Candidates</h3>
+            <span className={"checkmark"}>
+              *Recommended
+              <span>&nbsp;</span>
+            </span>
           </div>
           <ul className={`${styles.endorsedGrid} grid`}>
             {/* Data */}
