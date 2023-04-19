@@ -48,7 +48,7 @@ function Header() {
         <nav className={`${styles.headerNav}`}>
           <Link href="/">
             <a className={activeIf("/")} onClick={closeMenu}>
-              2023 May Elections
+              2023 May 16th Elections
             </a>
           </Link>
           <Link href="/where-to-vote">
