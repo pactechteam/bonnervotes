@@ -9,12 +9,14 @@ import Link from "next/link";
  * Endorsed
  */
 function Endorsed({ data }) {
+  const fileType = data.isPng == undefined ? "jpg" : "png";
+
   return (
     <li className={`${styles.endorsed} grid-item`}>
       <div className={classNames(styles.avatar)}>
         {!data.missingImg ? (
           <Image
-            src={`/img/candidates/${data.slug}.jpg`}
+            src={`/img/candidates/${data.slug}.${fileType}`}
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = "/img/blank-img.png";
@@ -50,6 +52,11 @@ function Endorsed({ data }) {
       {data.website !== undefined && data.website !== "" && (
         <Link href={data.website}>
           <a target="_blank">My Website</a>
+        </Link>
+      )}
+      {data.moreInformation !== undefined && data.moreInformation !== "" && (
+        <Link href={data.moreInformation}>
+          <a>More information</a>
         </Link>
       )}
     </li>

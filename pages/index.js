@@ -62,8 +62,10 @@ function Home() {
                 position: "West Bonner County School District Levy",
                 website: undefined,
                 surveyUrl: undefined,
-                missingImg: true,
-                slug: false,
+                missingImg: false,
+                slug: "voteNo",
+                moreInformation: "/levy",
+                isPng: true,
               }}
             />
           </ul>
