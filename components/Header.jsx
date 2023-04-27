@@ -80,11 +80,11 @@ function Header() {
               Why vote
             </a>
           </Link>
-          <Link href=" https://cloudgis.bonnercountyid.gov/portal/sharing/rest/content/items/fad613e61f55428787cd375aace2c44c/data">
+          {/* <Link href=" https://cloudgis.bonnercountyid.gov/portal/sharing/rest/content/items/fad613e61f55428787cd375aace2c44c/data">
             <a onClick={closeMenu} target="_blank">
               Sample ballot
             </a>
-          </Link>
+          </Link> */}
         </nav>
       </div>
 
