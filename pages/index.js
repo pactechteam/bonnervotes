@@ -51,6 +51,8 @@ function Home() {
                 name: "Cynthia Buse",
                 position: "Pend O'Relle Hospital District Trustee",
                 website: undefined,
+                moreInformation:
+                  "https://www.facebook.com/CynthiaBuseBonnerCounty",
                 surveyUrl:
                   "https://amv995.a2cdn1.secureserver.net/wp-content/uploads/2023/04/Watchmen-Voter-Guide-for-Pend-Oreille-Hospital-District.pdf",
                 slug: "buse",
