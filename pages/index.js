@@ -62,6 +62,8 @@ function Home() {
               data={{
                 name: "Vote No",
                 position: "West Bonner County School District Levy",
+                facebook:
+                  "https://www.facebook.com/profile.php?id=100092253524705&mibextid=ZbWKwL",
                 website: undefined,
                 surveyUrl: undefined,
                 missingImg: false,

@@ -54,10 +54,19 @@ function Endorsed({ data }) {
           <a target="_blank">My Website</a>
         </Link>
       )}
+      {data.facebook !== undefined && data.facebook !== "" && (
+        <div>
+          <Link href={data.facebook}>
+            <a target="_blank">Facebook</a>
+          </Link>
+        </div>
+      )}
       {data.moreInformation !== undefined && data.moreInformation !== "" && (
-        <Link href={data.moreInformation}>
-          <a>More information</a>
-        </Link>
+        <div>
+          <Link href={data.moreInformation}>
+            <a>More information</a>
+          </Link>
+        </div>
       )}
     </li>
   );
