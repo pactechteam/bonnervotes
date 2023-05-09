@@ -75,16 +75,16 @@ function Header() {
               GOP Slate
             </a>
           </Link> */}
-          <Link href="/whyvote">
+          {/* <Link href="/whyvote">
             <a onClick={closeMenu} target="_blank">
               Why vote
             </a>
-          </Link>
-          {/* <Link href=" https://cloudgis.bonnercountyid.gov/portal/sharing/rest/content/items/fad613e61f55428787cd375aace2c44c/data">
-            <a onClick={closeMenu} target="_blank">
-              Sample ballot
-            </a>
           </Link> */}
+          <Link href="https://cloudgis.bonnercountyid.gov/portal/sharing/rest/content/items/533a6ecc40e046799772e57fa35dd19f/data">
+            <a onClick={closeMenu} target="_blank">
+              Register to vote
+            </a>
+          </Link>
         </nav>
       </div>
 
