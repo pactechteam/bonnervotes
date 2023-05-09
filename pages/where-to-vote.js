@@ -39,7 +39,7 @@ function Locations() {
           </div> */}
           <p>
             <Link href="https://www.bonnercountyid.gov/departments/Elections">
-              <a target="blank">County webpage source link</a>
+              <a target="blank">Bonner County Elections</a>
             </Link>
           </p>
         </div>
