@@ -38,26 +38,24 @@ function Home() {
             {/* Data */}
             <Endorsed
               data={{
-                name: "Stacy Rodriguez",
-                position: "East Bonner CountyLibrary District Trustee",
-                website: "https://readers4rodriguez.com/",
-                surveyUrl:
-                  "https://amv995.a2cdn1.secureserver.net/wp-content/uploads/2023/04/Watchmen-Voter-Guide-for-East-Bonner-County-Library.pdf",
-                slug: "StacyR",
+                name: "Kieth Rutledge",
+                position: "WBCSD Zone 3 Trustee",
+                website: undefined,
+                surveyUrl: undefined,
+                slug: "keithRutledge",
               }}
             />
             <Endorsed
               data={{
-                name: "Cynthia Buse",
-                position: "Pend O'Relle Hospital District Trustee",
+                name: "Susan Brown",
+                position: "WBCSD Zone 2 Trustee",
                 website: undefined,
-                facebook: "https://www.facebook.com/CynthiaBuseBonnerCounty",
-                surveyUrl:
-                  "https://amv995.a2cdn1.secureserver.net/wp-content/uploads/2023/04/Watchmen-Voter-Guide-for-Pend-Oreille-Hospital-District.pdf",
-                slug: "buse",
+                facebook: undefined,
+                surveyUrl: undefined,
+                slug: undefined,
               }}
             />
-            <Endorsed
+            {/* <Endorsed
               data={{
                 name: "Vote No",
                 position: "West Bonner County School District Levy",
@@ -70,7 +68,7 @@ function Home() {
                 moreInformation: "/levy",
                 isPng: true,
               }}
-            />
+            /> */}
           </ul>
         </div>
       </section>{" "}

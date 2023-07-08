@@ -14,7 +14,7 @@ function Endorsed({ data }) {
   return (
     <li className={`${styles.endorsed} grid-item`}>
       <div className={classNames(styles.avatar)}>
-        {!data.missingImg ? (
+        {data.slug ? (
           <Image
             src={`/img/candidates/${data.slug}.${fileType}`}
             onError={(e) => {
