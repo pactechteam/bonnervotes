@@ -38,8 +38,8 @@ function Home() {
             {/* Data */}
             <Endorsed
               data={{
-                name: "Kieth Rutledge",
-                position: "WBCSD Zone 3 Trustee",
+                name: "Keith Rutledge",
+                position: "WBCSD Zone 4 Trustee",
                 website: undefined,
                 surveyUrl: undefined,
                 slug: "keithRutledge",
