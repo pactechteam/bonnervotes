@@ -38,12 +38,11 @@ function Home() {
               May 2022
               <img src="/flyers/22_may_707x1078.PNG" height={700} />
               May 2023
-              <img src="/flyers/23_may_707x1015.PNG" height={700} />
+              <img src="/flyers/23_may_709x1063.PNG" height={700} />
               And yes, we are AGAINST the August 2023 recall in West Bonner
               County. Please see our much prettier sister site,{" "}
-              <a href="https://www.westbonnervotes.org">
-                westbonnervotes.org
-              </a>, for more information.
+              <a href="https://www.westbonnervotes.org">westbonnervotes.org</a>,
+              for more information.
             </div>
           </div>
         </div>
