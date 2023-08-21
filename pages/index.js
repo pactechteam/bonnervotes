@@ -26,7 +26,7 @@ function Home() {
         </div>
       </section>
       Due to recent concerns, we wanted to list all of the candidates we have
-      ever endorsed.
+      ever endorsed and publicly supported.
       <section id="all-candidates" className={styles.candidatesSection}>
         <div className="content">
           <div>
