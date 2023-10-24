@@ -4,7 +4,6 @@ import Endorsed from "../components/Endorsed";
 import Candidate from "../components/Candidate";
 import styles from "../styles/pages/Index.module.scss";
 import candidateData from "../data/candidate-data.json";
-import Image from "next/image";
 
 /**
  * Home Page
@@ -25,26 +24,49 @@ function Home() {
           </div>
         </div>
       </section>
-      Due to recent concerns, we wanted to list all of the candidates we have
-      ever endorsed and publicly supported.
+      Candidates And Propositions
       <section id="all-candidates" className={styles.candidatesSection}>
         <div className="content">
-          <div>
-            <div>
-              May 2021
-              <img src="/flyers/21_may_412x639.jpg" height={700} />
-              November 2021
-              <img src="/flyers/21_nov_7200x9576.png" height={700} />
-              May 2022
-              <img src="/flyers/22_may_707x1078.PNG" height={700} />
-              May 2023
-              <img src="/flyers/23_may_709x1063.PNG" height={700} />
-              And yes, we are AGAINST the August 2023 recall in West Bonner
-              County. Please see our much prettier sister site,{" "}
-              <a href="https://www.westbonnervotes.org">westbonnervotes.org</a>,
-              for more information.
-            </div>
+          <div className={styles.titleBox}>
+            <h3>Candidates</h3>
+            <span className={"checkmark"}>
+              *Recommended
+              <span>&nbsp;</span>
+            </span>
           </div>
+          <ul className={`${styles.endorsedGrid} grid`}>
+            {/* Data */}
+            <Endorsed
+              data={{
+                name: "Alan Galloway",
+                position: "WBCSD Zone 1 Trustee",
+                website: undefined,
+                surveyUrl: undefined,
+                slug: "AlanGalloway",
+              }}
+            />
+            <Endorsed
+              data={{
+                name: "Troy Reinbold",
+                position: "WBCSD Zone 5 Trustee",
+                website: undefined,
+                facebook: undefined,
+                surveyUrl: undefined,
+                slug: "TroyReinbold",
+              }}
+            />
+            <Endorsed
+              data={{
+                name: "Kathy Nash",
+                position: "WBCSD Zone 3",
+                facebook: undefined,
+                website: undefined,
+                surveyUrl: undefined,
+                missingImg: false,
+                slug: "KathyNash",
+              }}
+            />
+          </ul>
         </div>
       </section>{" "}
     </article>
