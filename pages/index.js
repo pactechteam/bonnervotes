@@ -48,7 +48,7 @@ function Home() {
             <Endorsed
               data={{
                 name: "Troy Reinbold",
-                position: "WBCSD Zone 5 Trustee",
+                position: "WBCSD Zone 3 Trustee",
                 website: undefined,
                 facebook: undefined,
                 surveyUrl: undefined,
@@ -58,7 +58,7 @@ function Home() {
             <Endorsed
               data={{
                 name: "Kathy Nash",
-                position: "WBCSD Zone 3",
+                position: "WBCSD Zone 5 Trustee",
                 facebook: undefined,
                 website: undefined,
                 surveyUrl: undefined,
